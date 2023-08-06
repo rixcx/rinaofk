@@ -1,0 +1,9 @@
+services:
+  rinaofk:
+    build: .
+    ports:
+      - "3000:3000"
+    container_name: rinaofk
+    volumes:
+      - .:/usr/src/app/rinaofk
+    command: npm run dev
