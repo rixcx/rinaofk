@@ -1,1 +1,81 @@
 @use "global" as common;
+
+.content {
+  margin-bottom: 100px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.ttl {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  
+  .em {
+    font-family: common.$font-family-ubuntu;
+    font-size: 60px;
+  }
+}
+
+.desc {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.6em;
+  color: common.$color-body-thin;
+}
+
+.more {
+  border-bottom: 1px solid;
+    transition: all .3s;
+  
+  &:hover {
+    transition: all .3s;
+    background-color: #ececec;
+  }
+}
+
+.subtitle {
+  font-family: common.$font-family-ubuntu;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.item {
+  width: calc(50% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all .3s;
+  
+  &:hover {
+    transition: all .3s;
+    box-shadow: 0 12px 18px 4px rgba(145, 145, 145, 0.1), 0 24px 16px -14px rgba(145,145,145, 40%);
+  }
+}
+
+.item_ttl {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item_img {
+  margin-bottom: 10px;
+}
+
+.item_desc {
+    margin-bottom: 15px;
+}
+
+.item_more {
+  border-bottom: 1px solid;
+}

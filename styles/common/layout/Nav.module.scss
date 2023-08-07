@@ -1,0 +1,24 @@
+@use "global" as common;
+
+.nav {
+}
+
+.toggle {
+  display: none;
+}
+
+.lists {
+  > ul {
+    display: flex;
+    
+     > li {
+      margin-left: 50px;
+      font-family: common.$font-family-ubuntu;
+      font-size: 18px;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+     }
+  }
+}

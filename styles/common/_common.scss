@@ -2,8 +2,13 @@
 
 body {
   font-size: 16px;
+  color: common.$color-body;
+
+::selection {
+  background-color: #cef3de;
+}
 
   @include common.mediaquery(sp) {
-    font-size: 10px;
+    font-size: 14px;
   }
 }

@@ -1,0 +1,21 @@
+@use "global" as common;
+
+.body {
+  margin-top: 100px;
+  font-family: common.$font-family-default;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+
+  @include common.mediaquery(sp) {
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: calc(980px + 60px);
+  margin: 0 auto;
+  padding: 0 30px;
+  
+  @include common.mediaquery(sp) {
+  }
+}
