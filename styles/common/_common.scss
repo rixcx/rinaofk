@@ -1,14 +1,14 @@
-@use "global" as common;
+@use "global" as global;
 
 body {
   font-size: 16px;
-  color: common.$color-body;
+  color: global.$color-body;
 
 ::selection {
   background-color: #cef3de;
 }
 
-  @include common.mediaquery(sp) {
+  @include global.mediaquery(sp) {
     font-size: 14px;
   }
 }

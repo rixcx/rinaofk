@@ -1,4 +1,4 @@
-@use "global" as common;
+@use "global" as global;
 
 .content {
   margin-bottom: 100px;
@@ -15,7 +15,7 @@
   margin-bottom: 20px;
   
   .em {
-    font-family: common.$font-family-ubuntu;
+    font-family: global.$font-family-ubuntu;
     font-size: 60px;
   }
 }
@@ -24,7 +24,7 @@
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 1.6em;
-  color: common.$color-body-thin;
+  color: global.$color-body-thin;
 }
 
 .more {
@@ -38,7 +38,7 @@
 }
 
 .subtitle {
-  font-family: common.$font-family-ubuntu;
+  font-family: global.$font-family-ubuntu;
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;

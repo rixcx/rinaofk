@@ -1,12 +1,12 @@
-@use "global" as common;
+@use "global" as global;
 
 .body {
   margin-top: 100px;
-  font-family: common.$font-family-default;
+  font-family: global.$font-family-default;
   line-height: 1.5em;
   letter-spacing: 0.02em;
 
-  @include common.mediaquery(sp) {
+  @include global.mediaquery(sp) {
   }
 }
 
@@ -16,6 +16,6 @@
   margin: 0 auto;
   padding: 0 30px;
   
-  @include common.mediaquery(sp) {
+  @include global.mediaquery(sp) {
   }
 }

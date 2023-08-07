@@ -1,4 +1,4 @@
-@use "global" as common;
+@use "global" as global;
 
 .footer {
   display: flex;
@@ -17,7 +17,7 @@
     
     > a {
       margin-left: 30px;
-      font-family: common.$font-family-ubuntu;
+      font-family: global.$font-family-ubuntu;
       
       &:first-child {
         margin-left: 0;

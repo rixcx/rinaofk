@@ -1,4 +1,4 @@
-@use "global" as common;
+@use "global" as global;
 
 .nav {
 }
@@ -13,7 +13,7 @@
     
      > li {
       margin-left: 50px;
-      font-family: common.$font-family-ubuntu;
+      font-family: global.$font-family-ubuntu;
       font-size: 18px;
       
       &:first-child {
