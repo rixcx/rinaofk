@@ -4,9 +4,9 @@ body {
   font-size: 16px;
   color: global.$color-body;
 
-::selection {
-  background-color: #cef3de;
-}
+  ::selection {
+    background-color: #90e772;
+  }
 
   @include global.mediaquery(sp) {
     font-size: 14px;

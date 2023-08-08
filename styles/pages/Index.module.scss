@@ -1,7 +1,7 @@
 @use "global" as global;
 
 .content {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   
   &:last-child {
     margin-bottom: 0;
@@ -9,20 +9,21 @@
 }
 
 .ttl {
+  font-family: global.$font-family-ubuntu;
   font-size: 52px;
   font-weight: bold;
   line-height: 1.4em;
   margin-bottom: 20px;
   
   .em {
-    font-family: global.$font-family-ubuntu;
+    font-family: global.$font-family-default;
     font-size: 60px;
   }
 }
 
 .desc {
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 60px;
+  font-size: 22px;
   line-height: 1.6em;
   color: global.$color-body-thin;
 }
@@ -41,7 +42,7 @@
   font-family: global.$font-family-ubuntu;
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .list {
