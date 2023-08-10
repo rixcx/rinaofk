@@ -38,7 +38,10 @@ export default function About() {
         <div className={styles.wrap}>
           <h2 className={styles.wrap_ttl}>📗 Previously</h2>
           <div className={styles.wrap_detail}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque placerat enim, tristique dictum sapien suscipit vel.</p>
+            <p>I studied Information Design, with a focus on Web Design, at Osaka University of Arts.</p>
+            <p>After graduation in 2017, I started working at a website design company in Osaka. As a web designer, I created banner ads, LP designs, and website designs. Additionally, I was responsible for all processes of web development, including conducting interviews, organizing issues, controlling schedules, and designing and developing.</p>
+            <p>In 2021, I transitioned to the web development section, where I gained experience in PHP by fixing bugs on existing sites and updating and expanding the web system.</p>
+            <p>Currently, I’m improving my English and web development skills in Australia.</p>
           </div>
         </div>
       </section>
@@ -47,7 +50,7 @@ export default function About() {
         <div className={styles.wrap}>
           <h2 className={styles.wrap_ttl}>💓 Loves</h2>
           <div className={styles.wrap_detail}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque placerat enim, tristique dictum sapien suscipit vel.</p>
+            <p>Travel(domestic, overseas, both!) ・ Spicy foods ・ Games ・ JoJo's Bizarre Adventure ・ Suica's Penguin・ Stray kids・ Family(father, mother, two little brothers, little sister, and two dogs!)</p>
           </div>
         </div>
       </section>

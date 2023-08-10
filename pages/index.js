@@ -25,7 +25,7 @@ export default function Home() {
             <span className={styles.item_more}>comming soon</span>
           </div>
           <div className={styles.item}>
-            <h3 className={styles.item_ttl}>タイトル</h3>
+            <h3 className={styles.item_ttl}>Portfolio website</h3>
             <figure className={styles.item_img}><Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /></figure>
             <p className={styles.item_desc}>テキストテキストテキストテキストテキスト</p>
             <span className={styles.item_more}>comming soon</span>
