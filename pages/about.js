@@ -43,7 +43,7 @@ export default function About() {
             <p>I studied design principles, methods, and basis of web development in the Department of Information Design at Osaka University of Arts.</p>
             <p>In 2017, I started working at a website design company in Osaka. As a web designer, sometimes as a director and corder, I asked clients about requirements, organized issues, controlled schedules, created prototyping, designed, and developed. I have experience in leading a team of 5 people to renew websites with 100+ pages.</p>
             <p>In 2021, I transitioned to the web development section, where I gained experience in backend skills using PHP by implementing functions according to client's requirements and fixing bugs on websites. Additionally, I made contributions to the team's education by holding workshops on basic application knowledge and performing coding reviews.</p>
-            <p>Currently, I'm living in Australia and learn English and improve web development skills.</p>
+            <p>Currently, I'm living in Australia, learning English and improving my web development skills.</p>
           </div>
         </div>
       </section>

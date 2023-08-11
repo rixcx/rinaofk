@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className={styles.ttl}>
           Hello. I'm <span className={styles.em}>Rina</span>.<br />I like to design and code.
         </h1>
-        <p className={styles.desc}>I worked as a web designer and web engineer in Japan from April 2017 to August 2023.<br />Currently, I'm living in Australia and learn English and improve web development skills.</p>
+        <p className={styles.desc}>I worked as a web designer and web engineer in Japan from April 2017 to August 2023.<br />Currently, I'm living in Australia, learning English and improving my web development skills.</p>
         <Link href="/about" className={styles.more}>more about me</Link>
       </section>
       
