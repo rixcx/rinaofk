@@ -1,7 +1,7 @@
 @use "global" as global;
 
 .content {
-  margin-bottom: 120px;
+  margin-bottom: 160px;
   
   &:last-child {
     margin-bottom: 0;
@@ -21,8 +21,16 @@
   justify-content: space-between;
 }
 
+.intro_ttl {
+  font-family: global.$font-family-ubuntu;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
 .intro_txt {
-  width: 50%;
+  width: 58%;
 
     > p + p {
     margin-top: 1em;

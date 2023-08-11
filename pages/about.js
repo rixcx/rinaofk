@@ -9,11 +9,13 @@ export default function About() {
       <section className={styles.content}>
         <div className={styles.intro}>
           <div className={styles.intro_txt}>
-            <h2 className={styles.ttl}></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque placerat enim, tristique dictum sapien suscipit vel. </p>
-            <p>Phasellus sollicitudin scelerisque arcu, quis dictum purus auctor id. Phasellus vitae dictum mi. Donec eget finibus dui, a vulputate erat. Ut commodo vulputate purus, sed tincidunt nulla semper quis.</p>
+            <h2 className={styles.intro_ttl}>Rina Ofk</h2>
+            <p>I am a Web designer and Web developer.</p>
+            <p>I graduated from Osaka University of Arts. After that, I joined a website design company as a web designer, where I experienced the website building process - meeting with clients, planning, designing, coding, and publishing websites.<br />After 4 years, I transitioned to the web development section and worked on backend tasks, such as implementing functions in according to client's requirements.</p>
+            <p>I believe that Web Design is solving existing problems to solutions with appropriate UI and providing a good UX for users and clients. I work with a wealth of practical experience and this thinking.</p>
+            <p>The Knowledge should be acquired is vast. I have a growth mindset, and seeking opportunities to expand my knowledge and skills as a web developer.</p>
           </div>
-          <figure className={styles.intro_img}><Image src="/450x500.png" alt="me" width={430} height={400} /></figure>
+          <figure className={styles.intro_img}><Image src="/450x500.png" alt="me" width={360} height={380} /></figure>
         </div>
       </section>
 
@@ -38,10 +40,10 @@ export default function About() {
         <div className={styles.wrap}>
           <h2 className={styles.wrap_ttl}>📗 Previously</h2>
           <div className={styles.wrap_detail}>
-            <p>I studied Information Design, with a focus on Web Design, at Osaka University of Arts.</p>
-            <p>After graduation in 2017, I started working at a website design company in Osaka. As a web designer, I created banner ads, LP designs, and website designs. Additionally, I was responsible for all processes of web development, including conducting interviews, organizing issues, controlling schedules, and designing and developing.</p>
-            <p>In 2021, I transitioned to the web development section, where I gained experience in PHP by fixing bugs on existing sites and updating and expanding the web system.</p>
-            <p>Currently, I’m improving my English and web development skills in Australia.</p>
+            <p>I studied design principles, methods, and basis of web development in the Department of Information Design at Osaka University of Arts.</p>
+            <p>In 2017, I started working at a website design company in Osaka. As a web designer, sometimes as a director and corder, I asked clients about requirements, organized issues, controlled schedules, created prototyping, designed, and developed. I have experience in leading a team of 5 people to renew websites with 100+ pages.</p>
+            <p>In 2021, I transitioned to the web development section, where I gained experience in backend skills using PHP by implementing functions according to client's requirements and fixing bugs on websites. Additionally, I made contributions to the team's education by holding workshops on basic application knowledge and performing coding reviews.</p>
+            <p>Currently, I'm living in Australia and learn English and improve web development skills.</p>
           </div>
         </div>
       </section>

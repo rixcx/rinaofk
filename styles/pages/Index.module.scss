@@ -1,7 +1,7 @@
 @use "global" as global;
 
 .content {
-  margin-bottom: 120px;
+  margin-bottom: 160px;
   
   &:last-child {
     margin-bottom: 0;
@@ -30,11 +30,10 @@
 
 .more {
   border-bottom: 1px solid;
-    transition: all .3s;
+  transition: all .3s;
   
   &:hover {
     transition: all .3s;
-    background-color: #ececec;
   }
 }
 
