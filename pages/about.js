@@ -15,7 +15,7 @@ export default function About() {
             <p>I believe that Web Design is solving existing problems to solutions with appropriate UI and providing a good UX for users and clients. I work with a wealth of practical experience and this thinking.</p>
             <p>The Knowledge should be acquired is vast. I have a growth mindset, and seeking opportunities to expand my knowledge and skills as a web developer.</p>
           </div>
-          <figure className={styles.intro_img}><Image src="/450x500.png" alt="me" width={360} height={380} /></figure>
+          <figure className={styles.intro_img}><Image src="/about/img_about.png" alt="me" width={720} height={760} /></figure>
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export default function About() {
         <div className={styles.wrap}>
           <h2 className={styles.wrap_ttl}>💓 Loves</h2>
           <div className={styles.wrap_detail}>
-            <p>Travel(domestic, overseas, both!) ・ Spicy foods ・ Games ・ JoJo's Bizarre Adventure ・ Suica's Penguin・ Stray kids・ Family(father, mother, two little brothers, little sister, and two dogs!)</p>
+            <p>Travel(domestic, overseas, both) ・ Spicy foods ・ Games ・ JoJo's Bizarre Adventure ・ Suica's Penguin・ Stray kids・ Family(father, mother, two little brothers, little sister, and two dogs!)</p>
           </div>
         </div>
       </section>

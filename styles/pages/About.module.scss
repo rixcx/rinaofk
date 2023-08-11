@@ -38,9 +38,12 @@
 }
 
 .intro_img {
+  width: 360px;
+  height: auto;
+  
   > img {
-    object-fit: cover;
     border-radius: 10px;
+    object-fit: cover;
     box-shadow: 0 12px 18px 4px rgba(145, 145, 145, 0.1), 0 24px 16px -14px rgba(145,145,145, 40%);
   }
 }
