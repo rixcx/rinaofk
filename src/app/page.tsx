@@ -1,9 +1,20 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
+
+import { ButtonProp } from '../components/elements/button/ButtonProp';
 
 export default function Home() {
   return (
     <main className={styles.main}>
+    
+      <ButtonProp
+        type="primary"
+      >
+        <p>【ButtonProp primary】</p>
+      </ButtonProp>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -17,7 +28,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              src="/common/vercel.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -31,7 +42,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src="/common/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
