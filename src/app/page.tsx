@@ -1,47 +1,36 @@
 'use client'
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 
 import Image from "next/image";
-import styles from "./page.module.css";
 
 import { ButtonProp } from '../components/elements/button/ButtonProp';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-    
-      <ButtonProp
-        type="primary"
-      >
-        <p>【ButtonProp primary】</p>
-      </ButtonProp>
-
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/common/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main css={main}>
+      <div css={description}>
+        Hallo world.
+        Whereas
+        a
       </div>
-
-      <div className={styles.center}>
+      <div>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/common/vercel.svg"
+            alt="Vercel Logo"
+            width={100}
+            height={24}
+            priority
+          />
+        </a>
+      </div>
+      <div>
         <Image
-          className={styles.logo}
           src="/common/next.svg"
           alt="Next.js Logo"
           width={180}
@@ -49,58 +38,41 @@ export default function Home() {
           priority
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      
+      <ButtonProp
+        css={button_props_item}
+        type="primary"
+      >
+        <p>ButtonProp primary</p>
+      </ButtonProp>
+      <ButtonProp
+        css={button_props_item}
+        type="secondary"
+      >
+        <p>【ButtonProp secondary】</p>
+      </ButtonProp>
+      
     </main>
   );
 }
+
+/*---------- css ----------*/
+export const main = css`
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--color-white);
+`;
+
+export const description = css`
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+`;
+
+const button_props_item = css`
+  margin-top: 20px;
+`

@@ -39,11 +39,11 @@ const styles = {
 
   primary: css`
     ${base}
-    color: #3176e5;
+    color: var(--color-primary);
   `,
   
   secondary:  css`
     ${base}
-    color: #3e9979;
+    color: var(--color-secondary);
   `,
 }
