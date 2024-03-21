@@ -1,10 +1,23 @@
 html {
-  --color-white: #fff;
-  --color-black: #272727;
-  --color-gray-dark: #888;
+  --color-white:      #fff;
+  --color-black:      #272727;
+  --color-gray-dark:  #888;
   --color-gray-light: #F4F4F4;
   --color-background: #F8F7F4;
-  --color-primary: #FFD770;
-  --color-secondary: #ABDEE3;
-  --color-tirminaly: #009E68;
+  --color-primary:    #FFD770;
+  --color-secondary:  #ABDEE3;
+  --color-tirminaly:  #009E68;
+  
+  --container-width:   1132px;
+  --container-padding: 30px;
+  
+  --font-small:14px;
+  --font-body: 16px;
+  --font-em:   18px;
+  --font-h1:   56px;
+  --font-h2:   48px;
+  --font-h3:   40px;
+  --font-h4:   32px;
+  --font-h5:   24px;
+  --font-h6:   20px;
 }
