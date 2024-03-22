@@ -32,6 +32,7 @@ export default function RootLayout({
           font-size: 100%;
           font-family: sans-serif;
           font-weight: 300;
+          color: var(--color-black);
           background-color: var(--color-background);
         }
       `}

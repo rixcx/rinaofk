@@ -44,7 +44,7 @@ export const link = css`
       transition: all .15s;
 
       &:hover {
-        opacity: .8;
+        opacity: .7;
       }
     }
   }
