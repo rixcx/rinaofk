@@ -5,7 +5,7 @@ import * as global from './common/global'
 
 import Image from "next/image";
 
-import { ButtonProp } from '../components/elements/button/ButtonProp';
+import { Button } from '../components/elements/button/button';
 
 export default function Home() {
   return (
@@ -16,10 +16,13 @@ export default function Home() {
           <div css={hero}>
             <h1 css={title}>&#x1F427; Hello. I'm <span>Rina</span>,<br />Web Designer and developer.</h1>
             <p css={desc}>I worked as a web designer and web engineer in Japan from April 2017 to August 2023.<br />Currently, I'm in Australia, learning English and improving my web development skills.</p>
+            <Button
+              type="whiteSolid"
+              link="/about"
+            >About me</Button>
           </div>
         </div> 
       </div>
-  
 
       <div>
         <a
@@ -46,18 +49,14 @@ export default function Home() {
         />
       </div>
       
-      <ButtonProp
-        css={button_props_item}
-        type="primary"
-      >
-        <p>ButtonProp primary</p>
-      </ButtonProp>
-      <ButtonProp
-        css={button_props_item}
-        type="secondary"
-      >
-        <p>【ButtonProp secondary】</p>
-      </ButtonProp>
+      <Button
+        type="borderd"
+        link="/"
+      >borderd</Button>
+      <Button
+        type="greenSolid"
+        link="/"
+      >greenSolid</Button>
       
     </main>
   );
@@ -72,6 +71,7 @@ export const bg = css`
   background-color: var(--color-tirminaly);
   height: 525px;
   margin-top: -120px;
+  margin-bottom: calc(120px + 35px + 165px);
   padding-top: 120px;
 `;
 
@@ -81,13 +81,6 @@ export const hero = css`
   border: 2px solid var(--color-black);
   border-radius: 265px 15px 15px 15px;
   background-color: var(--color-primary);
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
   
   &::after {
     content: "";
@@ -129,8 +122,4 @@ export const desc= css`
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 30px;
-`
-
-const button_props_item = css`
-  margin-top: 20px;
 `
