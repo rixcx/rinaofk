@@ -289,7 +289,6 @@ export const item_link = css`
     text-underline-offset: 3px;
   }
 `
-
 export const about_bg = css`
   background-color: var(--color-secondary);
   padding: 160px 0;
