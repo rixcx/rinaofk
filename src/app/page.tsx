@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main css={main}>
 
-      <div css={bg}>
+      <div css={hero_bg}>
         <section css={global.container}>
           <div css={hero}>
             <h1 css={hero_title}>&#x1F427; Hello. I'm <span>Rina</span>,<br />Web Designer and developer.</h1>
@@ -104,34 +104,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <div css={about_bg}>
+        <section css={[global.container, about]}>
+          <div css={about_desc}>
+            <h3>rinaofk</h3>
+            <p>o gain experience of using tools, I built my portfolio site with I’ve never used such as VSCode, Git(CUI), GitHub, GitHub Pages and Docker.</p>
+            <Button
+              type="greenSolid"
+              link="/about"
+            >About me</Button>
+          </div>
+            <div css={about_img}>
+              <Image
+                src="https://placehold.co/400x310.png"
+                alt="rinaofk"
+                width={400}
+                height={310}
+              />
+            </div>
+        </section>
+      </div>
 
-      <div>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </div>
-      <div>
-        <Image
-          src="/common/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-      
-      <Button
-        type="borderd"
-        link="/"
-      >borderd</Button>
-      <Button
-        type="greenSolid"
-        link="/"
-      >greenSolid</Button>
-      
     </main>
   );
 }
@@ -141,11 +135,11 @@ export const main = css`
   background-color: var(--color-white);
 `;
 
-export const bg = css`
+export const hero_bg = css`
   background-color: var(--color-tirminaly);
   height: 525px;
   margin-top: -120px;
-  margin-bottom: calc(120px + 35px + 165px);
+  margin-bottom: calc(120px + 35px + 160px);
   padding-top: 120px;
 `;
 
@@ -197,7 +191,7 @@ export const hero_desc = css`
   margin-bottom: 30px;
 `
 export const works = css`
-  margin-bottom: 160px
+  margin-bottom: 160px;
 `
 export const works_title = css`
   font-size: var(--font-h2);
@@ -293,5 +287,53 @@ export const item_link = css`
     transition: all .15s;
     text-decoration: underline transparent;
     text-underline-offset: 3px;
+  }
+`
+
+export const about_bg = css`
+  background-color: var(--color-secondary);
+  padding: 160px 0;
+`
+
+export const about = css`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+`
+export const about_desc = css`
+  width: 34.3%;
+  margin-right: 58px;
+  
+  > h3 {
+    margin-bottom: 10px;
+    font-size: var(--font-h3);
+    font-weight: bold;
+  }
+  
+  > p {
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+`
+
+export const about_img = css`
+  position: relative;
+
+  > img {
+    border: 2px solid var(--color-black);
+    border-radius: 170px 10px 10px 10px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color-black);
+    border-radius: 170px 10px 10px 10px;
+    background-color: var(--color-primary);
   }
 `
