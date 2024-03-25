@@ -234,7 +234,15 @@ export const skill_wrap = css`
 export const skill_item = css`
   width: 50%;
   padding: 40px 60px 40px 60px;
-  border: 2px solid var(--color-black);
+  border-top: 2px solid var(--color-black);
+  
+  &:nth-of-type(-n+2) {
+    border-top: none;
+  }
+
+  &:nth-of-type(odd){
+    border-right: 2px solid var(--color-black);
+  }
   
   > h3 {
     margin-bottom: 20px;
