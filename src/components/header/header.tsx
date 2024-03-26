@@ -21,7 +21,7 @@ export default function Header() {
         </a>
         <ul css={menu}>
           <li><a href="/about">About</a></li>
-          <li><a href="/work">Work</a></li>
+          <li><a href="/works">Works</a></li>
         </ul>
       </nav>
     </header>

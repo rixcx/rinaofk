@@ -7,6 +7,8 @@ import Image from "next/image";
 
 import { Button } from '../components/elements/button/button';
 
+import { Work } from '../components/Work/Work';
+
 export default function Home() {
   return (
     <main css={main}>
@@ -27,81 +29,15 @@ export default function Home() {
       <section css={[global.container, works]}>
         <h2 css={works_title}>Works</h2>
         <div css={lists}>
-         <div css={item}>  {/* component化する */}
-            <div css={item_img}>
-              <Image
-                src="https://placehold.co/295x200.png"
-                alt="Vercel Logo"
-                width={295}
-                height={200}
-              />
-            </div>
-            <dl css={item_desc}>
-              <dt>Portfolio site</dt>
-              <dd>To gain experience of using tools, I built my portfolio site with I’ve never used such as VSCode, Git(CUI), GitHub, GitHub Pages and Docker.</dd>
-            </dl>
-            <ul css={item_tags}>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-            </ul>
-            <div css={item_link} className="hover"><a href="/">Read more</a></div>
-          </div>
-          <div css={item}>
-            <div css={item_img}>
-              <Image
-                src="https://placehold.co/295x200.png"
-                alt="Vercel Logo"
-                width={295}
-                height={200}
-              />
-            </div>
-            <dl css={item_desc}>
-              <dt>Portfolio site</dt>
-              <dd>To gain experience of using tools, I built my portfolio site with I’ve never used such as VSCode, Git(CUI), GitHub, GitHub Pages and Docker.</dd>
-            </dl>
-            <ul css={item_tags}>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-            </ul>
-            <div css={item_link} className="hover"><a href="/">Read more</a></div>
-          </div>
-          <div css={item}>
-            <div css={item_img}>
-              <Image
-                src="https://placehold.co/295x200.png"
-                alt="Vercel Logo"
-                width={295}
-                height={200}
-              />
-            </div>
-            <dl css={item_desc}>
-              <dt>Portfolio site</dt>
-              <dd>To gain experience of using tools, I built my portfolio site with I’ve never used such as VSCode, Git(CUI), GitHub, GitHub Pages and Docker.</dd>
-            </dl>
-            <ul css={item_tags}>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-              <li>XD</li>
-              <li>VSCode</li>
-            </ul>
-            <div css={item_link} className="hover"><a href="/">Read more</a></div>
-          </div>
+          <Work
+            title="Portfolio site"
+          ></Work>
+          <Work
+            title="ToDo lists"
+          ></Work>
+          <Work
+            title="r.blog"
+          ></Work>
         </div>
       </section>
       
@@ -203,91 +139,6 @@ export const lists = css`
   grid-template-columns: 32% 32% 32%;
   gap: 21px;
 
-`
-export const item = css`
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 22px 20px 30px 20px;
-  border: 2px solid var(--color-black);
-  border-radius: 10px;
-  background-color: var(--color-white);
-  transition: all .15s;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--color-black);
-    border-radius: 10px;
-    background-color: var(--color-tirminaly);
-    transition: all .15s;
-  }
-  
-  &:hover {
-    top: -10px;
-    left: -10px;
-    
-    &::after {
-      top: 10px;
-      left: 10px;
-    }
-    
-    & .hover a {
-      text-decoration: underline 1.5px;
-    }
-  }
-`
-export const item_img = css`
-  margin-bottom: 26px;
-
-  > img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-`
-
-export const item_desc = css`
-  margin-bottom: 26px;
-  
-  > dt {
-    margin-bottom: 10px;
-    font-size: var(--font-h5);
-  }
-  
-  > dd {
-    line-height: 1.6;
-  }
-`
-
-export const item_tags = css`
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 26px;
-  
-  > li {
-    padding: 5px 15px;
-    border-radius: 30px;
-    font-size: 12px;
-    color: var(--color-gray-dark);
-    background-color: var(--color-gray-light);
-  }
-`
-export const item_link = css`
-  text-align: right;
-
-  > a {
-    display: inline-block;
-    transition: all .15s;
-    text-decoration: underline transparent;
-    text-underline-offset: 3px;
-  }
 `
 export const about_bg = css`
   background-color: var(--color-secondary);
