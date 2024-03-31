@@ -26,6 +26,11 @@ export const wrapper = css`
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
+  
+  ${global.sp} {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
 `;
 
 export const link = css`
@@ -34,9 +39,20 @@ export const link = css`
   align-items: center;
   font-size: var(--font-small);
   
+  ${global.sp} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
   li {
     + li {
-      margin-left: 30px
+      margin-left: 30px;
+      
+      ${global.sp} {
+        margin-top: 20px;
+        margin-left: 0;
+      }
     }
     
     a {

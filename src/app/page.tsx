@@ -11,7 +11,7 @@ import { Work } from '../components/Work/Work';
 
 export default function Home() {
   return (
-    <main css={main}>
+    <main>
 
       <div css={hero_bg}>
         <section css={global.container}>
@@ -67,16 +67,19 @@ export default function Home() {
 }
 
 /*---------- css ----------*/
-export const main = css`
-  background-color: var(--color-white);
-`;
-
 export const hero_bg = css`
   background-color: var(--color-tirminaly);
   height: 525px;
   margin-top: -120px;
   margin-bottom: calc(120px + 35px + 160px);
   padding-top: 120px;
+  
+  ${global.sp} {
+  
+
+  
+  }
+  
 `;
 
 export const hero = css`
@@ -168,6 +171,7 @@ export const about_desc = css`
 
 export const about_img = css`
   position: relative;
+  width: 400px;
 
   > img {
     border: 2px solid var(--color-black);

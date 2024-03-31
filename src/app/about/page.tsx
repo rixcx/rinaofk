@@ -143,6 +143,7 @@ export const desc = css`
 export const img = css`
   position: relative;
   top: -80px;
+  width: 430px;
 
   > img {
     border: 2px solid var(--color-black);
@@ -210,6 +211,12 @@ export const skill = css`
 
 export const skill_tll = css`
   ${ex_ttl}
+  
+  &::before {
+    content: "";
+    width: 200px;
+  }
+  
 `
 export const skill_wrap = css`
   position: relative;
@@ -302,6 +309,8 @@ export const consist_wrap = css`
 `
 
 export const consist_img = css`
+  width: 336px;
+
   img {
     border: 2px solid var(--color-black);
     border-radius: 10px;

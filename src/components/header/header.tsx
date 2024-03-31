@@ -10,7 +10,7 @@ export default function Header() {
     <header css={global.container}>
       <nav css={wrapper}>
         <h1 style={{display: 'none'}}>rinaofk</h1>
-        <a href="/">
+        <a css={logo} href="/">
           <Image
             src="/common/logo.svg"
             alt="rinaofk"
@@ -33,6 +33,18 @@ export const wrapper = css`
   display: flex;
   justify-content: space-between;
   padding: 35px 0;
+
+  ${global.sp} {
+    padding: 20px 0;
+  }
+`;
+
+export const logo = css`
+  width: 32px;
+  
+  ${global.sp} {
+    width: 25px;
+  }
 `;
 
 export const menu = css`
@@ -41,11 +53,23 @@ export const menu = css`
   align-items: center;
   font-size: var(--font-em);
   
+  ${global.sp} {
+    font-size: var(--font-body);
+  }
+  
   li {
     padding: 10px 30px;
+    
+    ${global.sp} {
+      padding: 5px 15px;
+    }
 
     + li {
-      margin-left:20px
+      margin-left: 20px
+      
+      ${global.sp} {
+        margin-left: 10px
+      }
     }
     
     a {

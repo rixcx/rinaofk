@@ -1,6 +1,7 @@
 'use client'
 /** @jsxImportSource @emotion/react */
 import { Global, css } from "@emotion/react";
+import * as global from '../app/common/global'
 
 import { Ubuntu } from "next/font/google";
 
