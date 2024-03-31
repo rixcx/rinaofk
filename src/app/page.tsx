@@ -16,8 +16,8 @@ export default function Home() {
       <div css={hero_bg}>
         <section css={global.container}>
           <div css={hero}>
-            <h1 css={hero_title}>&#x1F427; Hello. I'm <span>Rina</span>,<br />Web Designer and developer.</h1>
-            <p css={hero_desc}>I worked as a web designer and web engineer in Japan from April 2017 to August 2023.<br />Currently, I'm in Australia, learning English and improving my web development skills.</p>
+            <h1 css={hero_title}>&#x1F427; Hello. I'm <span>Rina</span>,<br />a Creative web developer.</h1>
+            <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan, passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
             <Button
               type="whiteSolid"
               link="/about"
@@ -41,11 +41,11 @@ export default function Home() {
         </div>
       </section>
       
-      <div css={about_bg}>
+      {/* <div css={about_bg}>
         <section css={[global.container, about]}>
           <div css={about_desc}>
             <h3>rinaofk</h3>
-            <p>o gain experience of using tools, I built my portfolio site with I’ve never used such as VSCode, Git(CUI), GitHub, GitHub Pages and Docker.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <Button
               type="greenSolid"
               link="/about"
@@ -60,7 +60,7 @@ export default function Home() {
               />
             </div>
         </section>
-      </div>
+      </div> */}
 
     </main>
   );
@@ -126,7 +126,7 @@ export const hero_title = css`
 `
 export const hero_desc = css`
   font-size: 20px;
-  line-height: var(--line-height);
+  line-height: 1.6;
   margin-bottom: 30px;
 `
 export const works = css`
