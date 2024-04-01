@@ -51,10 +51,10 @@ export const menu = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--font-em);
+  font-size: var(--font-lg);
   
   ${global.sp} {
-    font-size: var(--font-body);
+
   }
   
   li {

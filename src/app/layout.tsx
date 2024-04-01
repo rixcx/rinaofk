@@ -25,14 +25,15 @@ export default function RootLayout({
   <>
     <Global
       styles={css`
-        *, *:before, *:after {
-          box-sizing: border-box;
+        html {
+          font-size: 62.5%;
         }
-        
+      
         body {
-          font-size: 100%;
           font-family: sans-serif;
+          font-size: var(--font-base);
           font-weight: 400;
+          letter-spacing: 0.01em;
           color: var(--color-black);
           background-color: var(--color-background);
         }

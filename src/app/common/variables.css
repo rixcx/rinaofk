@@ -11,13 +11,14 @@ html {
   --container-width:   1132px;
   --container-padding: 30px;
   
-  --font-small:14px;
-  --font-body: 16px;
-  --font-em:   18px;
-  --font-h1:   56px;
-  --font-h2:   48px;
-  --font-h3:   40px;
-  --font-h4:   32px;
-  --font-h5:   24px;
-  --font-h6:   20px;
+  --font-sm:   clamp(1.2rem, 1.101rem + 0.42vw, 1.4rem);
+  --font-base: clamp(1.4rem, 1.301rem + 0.42vw, 1.6rem);
+  --font-lg:   clamp(1.6rem, 1.501rem + 0.42vw, 1.8rem);
+
+  --font-01:   clamp(3rem, 1.712rem + 5.5vw, 5.6rem);
+  --font-02:   clamp(2.8rem, 1.809rem + 4.23vw, 4.8rem);
+  --font-03:   clamp(2.4rem, 1.607rem + 3.38vw, 4rem);
+  --font-04:   clamp(2rem, 1.406rem + 2.54vw, 3.2rem);
+  --font-05:   clamp(1.8rem, 1.503rem + 1.27vw, 2.4rem);
+  --font-06:   clamp(1.6rem, 1.402rem + 0.85vw, 2rem);
 }

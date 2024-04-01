@@ -88,7 +88,7 @@ export const desc = css`
   
   > dt {
     margin-bottom: 10px;
-    font-size: var(--font-h5);
+    font-size: var(--font-05);
   }
   
   > dd {

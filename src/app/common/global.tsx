@@ -16,3 +16,11 @@ export const container = css`
     padding: 0 calc(var(--container-padding)/2);
   }
 `
+
+export const sp_only = css`
+  display: none;
+  
+  ${sp} {
+    display: block;
+  }
+`

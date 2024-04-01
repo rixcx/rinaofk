@@ -34,7 +34,7 @@ export const main = css`
 `;
 
 export const title = css`
-  font-size: var(--font-h1);
+  font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
 `

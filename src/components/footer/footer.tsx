@@ -37,7 +37,7 @@ export const link = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--font-small);
+  font-size: var(--font-sm);
   
   ${global.sp} {
     flex-direction: column;

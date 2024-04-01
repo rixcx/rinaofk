@@ -12,11 +12,10 @@ import { Work } from '../components/Work/Work';
 export default function Home() {
   return (
     <main>
-
       <div css={hero_bg}>
         <section css={global.container}>
           <div css={hero}>
-            <h1 css={hero_title}>&#x1F427; Hello. I'm <span>Rina</span>,<br />a Creative web developer.</h1>
+            <h1 css={hero_title}>&#x1F427;<br css={global.sp_only} /> Hello. <br css={global.sp_only} />I'm <span>Rina</span>,<br />a Creative web developer.</h1>
             <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan, passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
             <Button
               type="whiteSolid"
@@ -75,20 +74,24 @@ export const hero_bg = css`
   padding-top: 120px;
   
   ${global.sp} {
-  
 
-  
   }
-  
 `;
 
 export const hero = css`
   position: relative;
+  margin-bottom: calc(160px + 10px);
   padding: 125px 100px 80px 185px;
   border: 2px solid var(--color-black);
   border-radius: 265px 15px 15px 15px;
   background-color: var(--color-primary);
-  
+
+  ${global.sp} {
+    margin-bottom: calc(15% + 10px);
+    padding: 50px 30px 30px 45px;
+    border-radius: 90px 15px 15px 15px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -104,9 +107,13 @@ export const hero = css`
 `;
 
 export const hero_title = css`
-  font-size: var(--font-h1);
+  font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 40px;
+
+  ${global.sp} {
+    margin-bottom: 20px;
+  }
   
   > span {
     position: relative;
@@ -121,19 +128,31 @@ export const hero_title = css`
       width: 140px;
       height: 20px;
       background: url(/index/deco_hero.svg);
+      background-repeat: no-repeat;
+      background-size:contain;
+      
+      ${global.sp} {
+        left: -8px;
+        bottom: -23%;
+        width: 120%;
+        height: 50%;
+      }
     }
   }
 `
 export const hero_desc = css`
-  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 30px;
 `
 export const works = css`
   margin-bottom: 160px;
+  
+  ${global.sp} {
+    margin-bottom: 15%;
+  }
 `
 export const works_title = css`
-  font-size: var(--font-h2);
+  font-size: var(--font-02);
   font-weight: bold;
   margin-bottom: 40px;
 `
@@ -141,7 +160,10 @@ export const lists = css`
   display: grid;
   grid-template-columns: 32% 32% 32%;
   gap: 21px;
-
+  
+  ${global.sp} {
+   grid-template-columns: auto;
+  }
 `
 export const about_bg = css`
   background-color: var(--color-secondary);
@@ -159,7 +181,7 @@ export const about_desc = css`
   
   > h3 {
     margin-bottom: 10px;
-    font-size: var(--font-h3);
+    font-size: var(--font-03);
     font-weight: bold;
   }
   

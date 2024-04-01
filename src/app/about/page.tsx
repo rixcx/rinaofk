@@ -184,7 +184,7 @@ export const main = css`
 `;
 
 export const title = css`
-  font-size: var(--font-h1);
+  font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
 `
@@ -205,7 +205,7 @@ export const desc = css`
   
   > h2 {
     margin-bottom: 20px;
-    font-size: var(--font-h3);
+    font-size: var(--font-03);
     font-weight: bold;
   }
   
@@ -246,7 +246,7 @@ export const ex_ttl = css`
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
-  font-size: var(--font-h2);
+  font-size: var(--font-02);
   font-weight: bold;
   
   &::before {
@@ -269,12 +269,12 @@ export const ex_txt = css`
   
   > h3 {
     margin-bottom: 15px;
-    font-size: var(--font-h4);
+    font-size: var(--font-04);
     font-weight: bold;
   }
   
   > p {
-    font-size: var(--font-h6);
+    font-size: var(--font-lg);
     margin-bottom: 15px;
     font-weight: bold;
   }
@@ -321,11 +321,11 @@ export const edu_txt = css`
 
   > h3 {
     margin-bottom: 15px;
-    font-size: var(--font-h4);
+    font-size: var(--font-04);
   }
   
   > p {
-    font-size: var(--font-h6);
+    font-size: var(--font-lg);
   }
 `
 
@@ -376,7 +376,7 @@ export const skill_item = css`
   
   > h3 {
     margin-bottom: 20px;
-    font-size: var(--font-h5);
+    font-size: var(--font-05);
     font-weight: bold;
   }
   
@@ -439,7 +439,7 @@ export const consist = css`
   
   > h2 {
     margin-bottom: 60px;
-    font-size: var(--font-h3);
+    font-size: var(--font-03);
     color: var(--color-white);
   }
 `
