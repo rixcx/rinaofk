@@ -30,6 +30,7 @@ export default function RootLayout({
         }
       
         body {
+          overflow-x: hidden;
           font-family: sans-serif;
           font-size: var(--font-base);
           font-weight: 400;

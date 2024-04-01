@@ -12,18 +12,16 @@ import { Work } from '../components/Work/Work';
 export default function Home() {
   return (
     <main>
-      <div css={hero_bg}>
-        <section css={global.container}>
-          <div css={hero}>
-            <h1 css={hero_title}>&#x1F427;<br css={global.sp_only} /> Hello. <br css={global.sp_only} />I'm <span>Rina</span>,<br />a Creative web developer.</h1>
-            <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan, passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
-            <Button
-              type="whiteSolid"
-              link="/about"
-            >About me</Button>
-          </div>
-        </section> 
-      </div>
+      <section css={[global.container,hero_bg]}>
+        <div css={hero}>
+          <h1 css={hero_title}>&#x1F427;<br css={global.sp_only} /> Hello. <br css={global.sp_only} />I'm <span>Rina</span>,<br />a Creative web developer.</h1>
+          <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan, passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
+          <Button
+            type="whiteSolid"
+            link="/about"
+          >About me</Button>
+        </div>
+      </section> 
       
       <section css={[global.container, works]}>
         <h2 css={works_title}>Works</h2>
@@ -67,14 +65,16 @@ export default function Home() {
 
 /*---------- css ----------*/
 export const hero_bg = css`
-  background-color: var(--color-tirminaly);
-  height: 525px;
-  margin-top: -120px;
-  margin-bottom: calc(120px + 35px + 160px);
-  padding-top: 120px;
-  
-  ${global.sp} {
-
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: -120px;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--color-tirminaly);
+    margin: 0 calc(50% - 50vw);
   }
 `;
 
@@ -87,7 +87,7 @@ export const hero = css`
   background-color: var(--color-primary);
 
   ${global.sp} {
-    margin-bottom: calc(15% + 10px);
+    margin-bottom: calc(25% + 10px);
     padding: 50px 30px 30px 45px;
     border-radius: 90px 15px 15px 15px;
   }
@@ -148,13 +148,17 @@ export const works = css`
   margin-bottom: 160px;
   
   ${global.sp} {
-    margin-bottom: 15%;
+    margin-bottom: 25%;
   }
 `
 export const works_title = css`
   font-size: var(--font-02);
   font-weight: bold;
   margin-bottom: 40px;
+  
+  ${global.sp} {
+    margin-bottom: 20px;
+  }
 `
 export const lists = css`
   display: grid;
