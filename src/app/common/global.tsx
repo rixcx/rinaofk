@@ -10,13 +10,14 @@ export const container = css`
   z-index: 0;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 
   ${sp} {
-    padding: 0 calc(var(--container-padding)/2);
+    padding-left: calc(var(--container-padding)/2);
+    padding-right: calc(var(--container-padding)/2);
   }
 `
-
 export const sp_only = css`
   display: none;
   

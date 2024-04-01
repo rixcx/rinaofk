@@ -181,32 +181,60 @@ export default function About() {
 /*---------- css ----------*/
 export const main = css`
   margin-top: 100px;
+  
+  ${global.sp} {
+    margin-top: 15%;
+  }
 `;
 
 export const title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
+  
+  ${global.sp} {
+    margin-bottom: 13%;
+  }
 `
 
 export const intro_bg = css`
   background-color: var(--color-primary);
   margin-bottom: 160px;
+  
+  ${global.sp} {
+    margin-bottom: 25%;
+    padding-bottom: 60px;
+  }
 `
 export const intro = css`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  ${global.sp} {
+    margin-top: 40%;
+    flex-direction: column-reverse;
+  }
 `
 
 export const desc = css`
   width: 42.7%;
   margin-right: 60px;
-  
+
+    ${global.sp} {
+      width: 100%;
+      margin-top: -45px;
+      margin-right: 0;
+    }
+
   > h2 {
     margin-bottom: 20px;
     font-size: var(--font-03);
     font-weight: bold;
+    
+    ${global.sp} {
+      margin-bottom: .5em;
+    }
   }
   
   > p {
@@ -218,10 +246,19 @@ export const img = css`
   position: relative;
   top: -80px;
   width: 430px;
+  
+  ${global.sp} {
+    top: -100px;
+    width: 80%;
+  }
 
   > img {
     border: 2px solid var(--color-black);
     border-radius: 170px 10px 10px 10px;
+    
+    ${global.sp} {
+      border-radius: 120px 10px 10px 10px;
+    }
   }
 
   &::after {
@@ -240,22 +277,26 @@ export const img = css`
 
 export const ex = css`
   margin-bottom: 160px;
+  
+    ${global.sp} {
+      margin-bottom: 25%;
+    }
 `
 
 export const ex_ttl = css`
   position: relative;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 0.7em;
   font-size: var(--font-02);
   font-weight: bold;
-  
+
   &::before {
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: 3px;
+    bottom: 0;
     left: -5px;
-    width: 290px;
+    width: 105%;
     height: 20px;
     display: inline-block;
     background: url(/index/deco_line.svg) 100% 100% / cover;
@@ -264,18 +305,23 @@ export const ex_ttl = css`
 
 export const ex_txt = css`
   + div {
-    margin-top:60px;
+    margin-top: 60px;
+    
+    ${global.sp} {
+      margin-top: 15%;
+    }
   }
   
   > h3 {
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
     font-size: var(--font-04);
     font-weight: bold;
+    
   }
   
   > p {
+    margin-bottom: 0.9em;
     font-size: var(--font-lg);
-    margin-bottom: 15px;
     font-weight: bold;
   }
   
@@ -306,21 +352,20 @@ export const ex_txt = css`
 
 export const edu = css`
   margin-bottom: 160px;
+  
+  ${global.sp} {
+    margin-bottom: 25%;
+  }
 `
 
 export const edu_ttl = css`
   ${ex_ttl}
-  
-  &::before {
-    content: "";
-    width: 240px;
-  }
 `
 export const edu_txt = css`
   font-weight: bold;
 
   > h3 {
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
     font-size: var(--font-04);
   }
   
@@ -331,15 +376,14 @@ export const edu_txt = css`
 
 export const skill = css`
   margin-bottom: calc(160px + 10px);
+  
+  ${global.sp} {
+    margin-bottom: calc(25% + 10px);
+  }
 `
 
 export const skill_tll = css`
   ${ex_ttl}
-  
-  &::before {
-    content: "";
-    width: 200px;
-  }
 `
 export const skill_wrap = css`
   position: relative;
@@ -348,7 +392,7 @@ export const skill_wrap = css`
   border-radius: 10px;
   border: 2px solid var(--color-black);
   background-color: var(--color-white);
-  
+
   &::after {
     content: "";
     position: absolute;
@@ -365,17 +409,34 @@ export const skill_item = css`
   width: 50%;
   padding: 40px 60px 40px 60px;
   border-top: 2px solid var(--color-black);
-  
+
+  ${global.sp} {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
   &:nth-of-type(-n+2) {
     border-top: none;
+    
+    ${global.sp} {
+      border-top: 2px solid var(--color-black);
+      
+      &:first-of-type {
+        border-top: none;
+      }
+    }
   }
 
   &:nth-of-type(odd){
     border-right: 2px solid var(--color-black);
+    
+    ${global.sp} {
+      border-right: none;
+    }
   }
   
   > h3 {
-    margin-bottom: 20px;
+    margin-bottom: 0.8em;
     font-size: var(--font-05);
     font-weight: bold;
   }
@@ -384,9 +445,14 @@ export const skill_item = css`
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    font-size: var(--font-sm);
     
     > li {
       padding: 5px 15px;
+
+      ${global.sp} {
+        padding: 3px 12px;
+      }
 
       &:first-of-type {
         margin-left: 0;
@@ -421,7 +487,11 @@ export const skill_item = css`
     justify-content: center;
     align-content: center;
     color: var(--color-gray-dark);
-    
+
+      ${global.sp} {
+        padding: 35px 0;
+      }
+
     > p {
       margin:auto;
       display: inline-block;
@@ -437,8 +507,13 @@ export const consist = css`
   padding-top: 160px;
   padding-bottom: 160px;
   
+  ${global.sp} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
   > h2 {
-    margin-bottom: 60px;
+    margin-bottom: 1.5em;
     font-size: var(--font-03);
     color: var(--color-white);
   }
@@ -448,10 +523,18 @@ export const consist_wrap = css`
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  
+  ${global.sp} {
+    gap: 15px;
+  }
 `
 
 export const consist_img = css`
   width: 336px;
+
+  ${global.sp} {
+    width: 100%;
+  }
 
   img {
     border: 2px solid var(--color-black);

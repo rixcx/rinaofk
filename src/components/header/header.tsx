@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header css={[global.container, header]}>
-      <nav css={wrapper}>
+      <nav css={wrap}>
         <h1 style={{display: 'none'}}>rinaofk</h1>
         <a css={logo} href="/">
           <Image
@@ -34,7 +34,7 @@ export const header = css`
   z-index: 99;
 `;
 
-export const wrapper = css`
+export const wrap = css`
   display: flex;
   justify-content: space-between;
   padding: 35px 0;
@@ -57,10 +57,6 @@ export const menu = css`
   justify-content: space-between;
   align-items: center;
   font-size: var(--font-lg);
-  
-  ${global.sp} {
-
-  }
   
   li {
     padding: 10px 30px;

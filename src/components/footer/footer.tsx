@@ -5,62 +5,64 @@ import * as global from '../../app/common/global'
 
 export default function Footer() {
   return (
-  <footer css={global.container}>
-    <div css={wrapper}>
-      <small>&copy; 2023 rinaofk</small>
-      <nav>
-        <ul css={link}>
-          <li><a href="#">xxx@gmail.com</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
-    </div>
+  <footer css={[global.container,footer]}>
+    <small>&copy; 2023 rinaofk</small>
+    <nav>
+      <ul>
+        <li><a href="#">xxx@gmail.com</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
   </footer>
   );
 }
 
 /*---------- css ----------*/
-export const wrapper = css`
+export const footer = css`
   display: flex;
   justify-content: space-between;
-  padding: 60px 0;
+  padding-top: 160px;
+  padding-bottom: 60px;
   
   ${global.sp} {
     flex-direction: column-reverse;
-    padding: 40px 0;
-  }
-`;
-
-export const link = css`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: var(--font-sm);
-  
-  ${global.sp} {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
   
-  li {
-    + li {
-      margin-left: 30px;
+  > nav {
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--font-sm);
       
       ${global.sp} {
-        margin-top: 20px;
-        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
       }
-    }
-    
-    a {
-      display: inline-block;
-      transition: all .15s;
+      
+      > li {
+        + li {
+          margin-left: 30px;
+          
+          ${global.sp} {
+            margin-top: 1.7em;
+            margin-left: 0;
+          }
+        }
+        
+        > a {
+          display: inline-block;
+          transition: all .15s;
 
-      &:hover {
-        opacity: .7;
+          &:hover {
+            opacity: .7;
+          }
+        }
       }
     }
   }
