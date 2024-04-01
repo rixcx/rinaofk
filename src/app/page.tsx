@@ -77,7 +77,6 @@ export const hero_bg = css`
     margin: 0 calc(50% - 50vw);
   }
 `;
-
 export const hero = css`
   position: relative;
   margin-bottom: calc(160px + 10px);
@@ -87,17 +86,17 @@ export const hero = css`
   background-color: var(--color-primary);
 
   ${global.sp} {
-    margin-bottom: calc(25% + 10px);
+    margin-bottom: calc(100px + 10px);
     padding: 50px 30px 30px 45px;
-    border-radius: 90px 15px 15px 15px;
+    border-radius: 100px 15px 15px 15px;
   }
 
   &::after {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 10px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
     width: 100%;
     height: 100%;
     border: 2px solid var(--color-black);
@@ -105,16 +104,11 @@ export const hero = css`
     background-color: var(--color-secondary);
   }
 `;
-
 export const hero_title = css`
   font-size: var(--font-01);
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 0.7em;
 
-  ${global.sp} {
-    margin-bottom: 20px;
-  }
-  
   > span {
     position: relative;
     display: inline-block;
@@ -142,23 +136,19 @@ export const hero_title = css`
 `
 export const hero_desc = css`
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 `
 export const works = css`
   margin-bottom: 160px;
   
   ${global.sp} {
-    margin-bottom: 25%;
+    margin-bottom: 0;
   }
 `
 export const works_title = css`
   font-size: var(--font-02);
   font-weight: bold;
-  margin-bottom: 40px;
-  
-  ${global.sp} {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 0.8em;
 `
 export const lists = css`
   display: grid;
@@ -166,7 +156,7 @@ export const lists = css`
   gap: 21px;
   
   ${global.sp} {
-   grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 `
 export const about_bg = css`
@@ -194,7 +184,6 @@ export const about_desc = css`
     line-height: 1.6;
   }
 `
-
 export const about_img = css`
   position: relative;
   width: 400px;

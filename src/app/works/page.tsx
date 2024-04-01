@@ -31,17 +31,26 @@ export default function Works() {
 /*---------- css ----------*/
 export const main = css`
   margin-top: 100px;
+  
+  ${global.sp} {
+    margin-top: 60px;
+  }
 `;
-
 export const title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
+  
+  ${global.sp} {
+    margin-bottom: 40px;
+  }
 `
-
 export const lists = css`
   display: grid;
   grid-template-columns: 32% 32% 32%;
   gap: 21px;
-
+  
+  ${global.sp} {
+    grid-template-columns: auto;
+  }
 `

@@ -183,26 +183,24 @@ export const main = css`
   margin-top: 100px;
   
   ${global.sp} {
-    margin-top: 15%;
+    margin-top: 60px;
   }
 `;
-
 export const title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
   
   ${global.sp} {
-    margin-bottom: 13%;
+    margin-bottom: 40px;
   }
 `
-
 export const intro_bg = css`
   background-color: var(--color-primary);
   margin-bottom: 160px;
   
   ${global.sp} {
-    margin-bottom: 25%;
+    margin-bottom: 100px;
     padding-bottom: 60px;
   }
 `
@@ -212,11 +210,10 @@ export const intro = css`
   align-items: center;
   
   ${global.sp} {
-    margin-top: 40%;
+    margin-top: 140px;
     flex-direction: column-reverse;
   }
 `
-
 export const desc = css`
   width: 42.7%;
   margin-right: 60px;
@@ -241,7 +238,6 @@ export const desc = css`
     line-height: 1.6;
   }
 `
-
 export const img = css`
   position: relative;
   top: -80px;
@@ -274,15 +270,13 @@ export const img = css`
     background-color: var(--color-tirminaly);
   }
 `
-
 export const ex = css`
   margin-bottom: 160px;
   
     ${global.sp} {
-      margin-bottom: 25%;
+      margin-bottom: 100px;
     }
 `
-
 export const ex_ttl = css`
   position: relative;
   display: inline-block;
@@ -308,7 +302,7 @@ export const ex_txt = css`
     margin-top: 60px;
     
     ${global.sp} {
-      margin-top: 15%;
+      margin-top: 40px;
     }
   }
   
@@ -349,15 +343,13 @@ export const ex_txt = css`
     }
   }
 `
-
 export const edu = css`
   margin-bottom: 160px;
   
   ${global.sp} {
-    margin-bottom: 25%;
+    margin-bottom: 100px;
   }
 `
-
 export const edu_ttl = css`
   ${ex_ttl}
 `
@@ -373,15 +365,13 @@ export const edu_txt = css`
     font-size: var(--font-lg);
   }
 `
-
 export const skill = css`
   margin-bottom: calc(160px + 10px);
   
   ${global.sp} {
-    margin-bottom: calc(25% + 10px);
+    margin-bottom: calc(100px + 10px);
   }
 `
-
 export const skill_tll = css`
   ${ex_ttl}
 `
@@ -498,11 +488,9 @@ export const skill_item = css`
     }
   }
 `
-
 export const consist_bg = css`
   background-color: var(--color-tirminaly);
 `
-
 export const consist = css`
   padding-top: 160px;
   padding-bottom: 160px;
@@ -518,19 +506,17 @@ export const consist = css`
     color: var(--color-white);
   }
 `
-
 export const consist_wrap = css`
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 2.9%;
   
   ${global.sp} {
     gap: 15px;
   }
 `
-
 export const consist_img = css`
-  width: 336px;
+  width: 31.4%;
 
   ${global.sp} {
     width: 100%;
