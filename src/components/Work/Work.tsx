@@ -5,11 +5,23 @@ import * as global from '../../app/common/global'
 
 import Image from "next/image";
 
+//3つここで回せるのでは
+
 type WorkProps = {
+  id: string;
+  url: string;
   title: string;
+  caption: string;
+  imageSrc: string;
+  tools: string[];
 };
 
 export const Work = (props: WorkProps) => {
+
+  const listTools = props.tools.map((tool: string) =>
+    <li>{tool}</li>
+  );
+
   return (
     <div css={work}>
       <div css={img}>
@@ -22,11 +34,12 @@ export const Work = (props: WorkProps) => {
       </div>
       <dl css={desc}>
         <dt>{props.title}</dt>
-        <dd>Sample Text.</dd>
+        <dd>{props.url}</dd>
+        <dd>{props.id}</dd>
+        <dd>{props.caption}</dd>
       </dl>
       <ul css={tags}>
-        <li>XD</li>
-        <li>VSCode</li>
+        {listTools}
       </ul>
       <div css={link} className="hover"><a href="/">Read more</a></div>
     </div>

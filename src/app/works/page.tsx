@@ -7,21 +7,25 @@ import Image from "next/image";
 
 import { Work } from '../../components/Work/Work';
 
+import Data from '../../components/Work/data';
+
 export default function Works() {
   return (
     <main css={main}>
         <section css={[global.container]}>
           <h1 css={title}>Works</h1>
           <div css={lists}>
-            <Work
-              title="Portfolio site"
-            ></Work>
-            <Work
-              title="ToDo lists"
-            ></Work>
-            <Work
-              title="r.blog"
-            ></Work>
+            {Data.map((work) => (
+                <Work
+                  key={work.id}
+                  id={work.id}
+                  title={work.title}
+                  imageSrc={work.imageSrc}
+                  url={work.url}
+                  caption={work.caption}
+                  tools={work.tools}>
+                </Work>
+              ))}
           </div>
         </section>
     </main>

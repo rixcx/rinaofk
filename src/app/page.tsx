@@ -9,6 +9,8 @@ import { Button } from '../components/elements/button/button';
 
 import { Work } from '../components/Work/Work';
 
+import Data from '../components/Work/data';
+
 export default function Home() {
   return (
     <main>
@@ -26,15 +28,17 @@ export default function Home() {
       <section css={[global.container, works]}>
         <h2 css={works_title}>Works</h2>
         <div css={lists}>
-          <Work
-            title="Portfolio site"
-          ></Work>
-          <Work
-            title="ToDo lists"
-          ></Work>
-          <Work
-            title="r.blog"
-          ></Work>
+          {Data.map((work) => (
+              <Work
+                key={work.id}
+                id={work.id}
+                title={work.title}
+                imageSrc={work.imageSrc}
+                url={work.url}
+                caption={work.caption}
+                tools={work.tools}>
+              </Work>
+            ))}
         </div>
       </section>
       
