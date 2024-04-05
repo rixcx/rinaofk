@@ -14,19 +14,7 @@ export default function Works() {
     <main css={main}>
         <section css={[global.container]}>
           <h1 css={title}>Works</h1>
-          <div css={lists}>
-            {Data.map((work) => (
-                <Work
-                  key={work.id}
-                  id={work.id}
-                  title={work.title}
-                  imageSrc={work.imageSrc}
-                  url={work.url}
-                  caption={work.caption}
-                  tools={work.tools}>
-                </Work>
-              ))}
-          </div>
+          <Work />
         </section>
     </main>
   )
@@ -47,14 +35,5 @@ export const title = css`
   
   ${global.sp} {
     margin-bottom: 40px;
-  }
-`
-export const lists = css`
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
-  gap: 21px;
-  
-  ${global.sp} {
-    grid-template-columns: auto;
   }
 `

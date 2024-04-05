@@ -27,19 +27,7 @@ export default function Home() {
       
       <section css={[global.container, works]}>
         <h2 css={works_title}>Works</h2>
-        <div css={lists}>
-          {Data.map((work) => (
-              <Work
-                key={work.id}
-                id={work.id}
-                title={work.title}
-                imageSrc={work.imageSrc}
-                url={work.url}
-                caption={work.caption}
-                tools={work.tools}>
-              </Work>
-            ))}
-        </div>
+        <Work />
       </section>
       
       {/* <div css={about_bg}>
@@ -153,15 +141,6 @@ export const works_title = css`
   font-size: var(--font-02);
   font-weight: bold;
   margin-bottom: 0.8em;
-`
-export const lists = css`
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
-  gap: 21px;
-  
-  ${global.sp} {
-    grid-template-columns: auto;
-  }
 `
 export const about_bg = css`
   background-color: var(--color-secondary);

@@ -5,49 +5,50 @@ import * as global from '../../app/common/global'
 
 import Image from "next/image";
 
-//3つここで回せるのでは
+import Data from './data';
 
-type WorkProps = {
-  id: string;
-  url: string;
-  title: string;
-  caption: string;
-  imageSrc: string;
-  tools: string[];
-};
-
-export const Work = (props: WorkProps) => {
-
-  const listTools = props.tools.map((tool: string) =>
-    <li>{tool}</li>
-  );
-
+export const Work = () => {
   return (
-    <div css={work}>
-      <div css={img}>
-        <Image
-          src="https://placehold.co/295x200.png"
-          alt="Vercel Logo"
-          width={295}
-          height={200}
-        />
-      </div>
-      <dl css={desc}>
-        <dt>{props.title}</dt>
-        <dd>{props.url}</dd>
-        <dd>{props.id}</dd>
-        <dd>{props.caption}</dd>
-      </dl>
-      <ul css={tags}>
-        {listTools}
-      </ul>
-      <div css={link} className="hover"><a href="/">Read more</a></div>
+    <div css={list}>
+      {Data.map((work) => (
+        <div css={item} key={work.id}>
+            <div css={img}>
+            <Image
+              src="https://placehold.co/295x200.png"
+              alt="Vercel Logo"
+              width={295}
+              height={200}
+            />
+          </div>
+          <dl css={desc}>
+            <dt>{work.title}</dt>
+            <dd>{work.url}</dd>
+            <dd>{work.id}</dd>
+            <dd>{work.caption}</dd>
+          </dl>
+            <ul css={tags}>
+            {work.tools.map((tool) => (
+              <li key={tool}>{tool}</li>
+            ))}
+          </ul>
+          <div css={link} className="hover"><a href="/">Read more</a></div>
+        </div>
+      ))}
     </div>
   );
 }
 
 /*---------- css ----------*/
-export const work = css`
+export const list = css`
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 21px;
+  
+  ${global.sp} {
+    grid-template-columns: auto;
+  }
+`
+export const item = css`
   position: relative;
   top: 0;
   left: 0;
