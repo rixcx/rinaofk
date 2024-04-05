@@ -3,6 +3,8 @@
 import { css } from '@emotion/react'
 import * as global from '../../app/common/global'
 
+import Link from "next/link";
+
 import Image from "next/image";
 
 import Data from './data';
@@ -31,7 +33,7 @@ export const Work = () => {
               <li key={tool}>{tool}</li>
             ))}
           </ul>
-          <div css={link} className="hover"><a href="/">Read more</a></div>
+          <div css={link} className="hover"><Link href={`/works/${work.url}`} >Read more</Link></div>
         </div>
       ))}
     </div>
