@@ -35,9 +35,15 @@ export default function RootLayout({
           font-size: var(--font-base);
           font-weight: 400;
           letter-spacing: 0.01em;
+          line-height: 1.6;
           color: var(--color-black);
           background-color: var(--color-background);
         }
+        
+        h1,h2,h3,h4,h5,h6 {
+          line-height: normal;
+        }
+        
       `}
     />
   

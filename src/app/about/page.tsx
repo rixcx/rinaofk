@@ -225,17 +225,13 @@ export const desc = css`
     }
 
   > h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: var(--font-03);
     font-weight: bold;
     
     ${global.sp} {
       margin-bottom: .5em;
     }
-  }
-  
-  > p {
-    line-height: 1.6;
   }
 `
 export const img = css`
@@ -273,9 +269,9 @@ export const img = css`
 export const ex = css`
   margin-bottom: 160px;
   
-    ${global.sp} {
-      margin-bottom: 100px;
-    }
+  ${global.sp} {
+    margin-bottom: 100px;
+  }
 `
 export const ex_ttl = css`
   position: relative;
@@ -310,7 +306,7 @@ export const ex_txt = css`
     margin-bottom: 0.5em;
     font-size: var(--font-04);
     font-weight: bold;
-    
+    letter-spacing: 0.03em;
   }
   
   > p {
@@ -320,8 +316,6 @@ export const ex_txt = css`
   }
   
   > ul {
-    line-height: 1.6;
-    
     > li {
       position: relative;
       padding-left: 1em;
@@ -439,6 +433,8 @@ export const skill_item = css`
     
     > li {
       padding: 5px 15px;
+      line-height: normal;
+      border-radius: 3px;
 
       ${global.sp} {
         padding: 3px 12px;

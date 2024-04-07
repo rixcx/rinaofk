@@ -106,10 +106,6 @@ export const desc = css`
     margin-bottom: 10px;
     font-size: var(--font-05);
   }
-  
-  > dd {
-    line-height: 1.6;
-  }
 `
 
 export const tags = css`
@@ -122,6 +118,7 @@ export const tags = css`
     padding: 5px 15px;
     border-radius: 30px;
     font-size: 12px;
+    line-height: normal;
     color: var(--color-gray-dark);
     background-color: var(--color-gray-light);
   }

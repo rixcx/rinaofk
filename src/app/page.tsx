@@ -127,15 +127,14 @@ export const hero_title = css`
   }
 `
 export const hero_desc = css`
-  line-height: 1.6;
   margin-bottom: 2em;
 `
 export const works = css`
-  margin-bottom: 160px;
+  /* margin-bottom: 160px;
   
   ${global.sp} {
     margin-bottom: 0;
-  }
+  } */
 `
 export const works_title = css`
   font-size: var(--font-02);
@@ -164,7 +163,6 @@ export const about_desc = css`
   
   > p {
     margin-bottom: 40px;
-    line-height: 1.6;
   }
 `
 export const about_img = css`

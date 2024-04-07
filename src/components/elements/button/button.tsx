@@ -31,6 +31,7 @@ const base = css`
   padding: 17px 70px;
   border-radius: 35px;
   font-weight: 400;
+  line-height: normal;
   transition: all .15s;
 `;
 
