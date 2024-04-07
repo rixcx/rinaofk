@@ -30,11 +30,7 @@ function Page() {
 
   return (
     <main css={main}>
-        <section css={[global.container]}>
-          <h1 css={title}>Works</h1>
-          <p>This is WorkPage</p>
-          <Page />
-        </section>
+      <Page />
     </main>
   )
 }
