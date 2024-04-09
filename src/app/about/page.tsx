@@ -18,7 +18,7 @@ export default function About() {
             </div>
             <div css={img}>
               <Image
-                src="https://placehold.co/430x470.png"
+                src="/works/img_intro.png"
                 alt="rinaofk"
                 width={430}
                 height={470}
@@ -148,27 +148,30 @@ export default function About() {
             <div css={consist_wrap}>
               <div css={consist_img}>
                 <Image
-                  src="https://placehold.co/336x318.png"
-                  alt="Vercel Logo"
+                  src="/works/img_consist01.png"
+                  alt="Travel"
                   width={336}
                   height={318}
                 />
+                <p>I always think travel. I love thinking about where to go, what to experience, and how to go there. Current my dream is to travel Europe becouse I haven't gone.</p>
               </div>
               <div css={consist_img}>
                 <Image
-                  src="https://placehold.co/336x318.png"
-                  alt="Vercel Logo"
+                  src="/works/img_consist02.png"
+                  alt="spicy food"
                   width={336}
                   height={318}
                 />
+                <p>I can't live without spicy food. I have visited to Korea just to indulge in spicy food, or I have grown chili peppers by myself to eat them.</p>
               </div>
               <div css={consist_img}>
                 <Image
-                  src="https://placehold.co/336x318.png"
-                  alt="Vercel Logo"
+                  src="/works/img_consist03.png"
+                  alt="the goofy faces"
                   width={336}
                   height={318}
                 />
+                <p>I have a weakness for the goofy faces of birds even though I can't explain why. </p>
               </div>
             </div>
           </section>
@@ -516,10 +519,20 @@ export const consist_img = css`
 
   ${global.sp} {
     width: 100%;
+    
+    + div {
+      margin-top: 40px;
+    }
   }
 
   img {
+    margin-bottom: 15px;
     border: 2px solid var(--color-black);
     border-radius: 10px;
+  }
+  
+  p {
+    padding: 0 0.5em;
+    color: var(  --color-white);
   }
 `
