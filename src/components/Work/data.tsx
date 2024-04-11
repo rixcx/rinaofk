@@ -28,8 +28,8 @@ const data: WorkProps[] = [
   {
     id: "3",
     title: "Portfolio - rinaofk",
-    caption: "caption text",
-    url: "a website about me",
+    caption: "a website about me",
+    url: "portfolio",
     imageSrc: "/02.png",
     tools: ["Figma","Next.js(Typescript)","Sass(SCSS)","Emotion","git(CUI)","GitHub","Docker-compose"],
   },
