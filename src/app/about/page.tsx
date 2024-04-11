@@ -14,7 +14,7 @@ export default function About() {
           <section css={[global.container, intro]}>
             <div css={desc}>
               <h2>rinaofk</h2>
-              <p>I am a Web developer with experience in designing multiple websites for BtoC and developing various functions.<br />I have experienced practical works in renewing old sites, creating attractive LP and and adding new features.<br />I find fulfillment in ensuring customer and user satisfaction by solving problems and extracting value through web solutions.</p>
+              <p>I am a Web developer with experience in designing multiple websites for BtoC and developing various functions.<br />I have experienced practical works in renewing old sites, creating attractive LP and adding new features.<br />I feel fulfillment in ensuring customer and user satisfaction by solving problems and by giving them value through web solutions.</p>
             </div>
             <div css={img}>
               <Image
@@ -34,17 +34,17 @@ export default function About() {
             <p>Web Engineer  /  Apr 2021  - Aug 2023</p>
             <ul>
               <li>Responsible for developing new functions as the only engineer in web design department of Osaka branch. Made estimates upon client’s request, built and improved features with using PHP(CakePHP) and MySQL.</li>
-              <li>Conducted CakePHP workshops that contributed to grow the value of design team’s suggestion by have knowledge about how we create features.</li>
+              <li>Conducted CakePHP workshops that contributed to the grow in value of design team’s suggestions by have knowledge about how we create features.</li>
             </ul>
           </div>
           <div css={ex_txt}>
             <h3>Aden.Corp,Inc.</h3>
             <p>Web Designer  /  Apr 2017  - Mar 2021</p>
             <ul>
-              <li>Worked with accurate the meeting and proposals based on wealthy experience and client’s needs.</li>
+              <li>Conducted meeting with clients to discuss their needs and suggesting proposals suitable for them, drawing from my wealth of experience.</li>
               <li>Created high quality wire frames and comprehensible sitemaps to effectively communicate, And designed attractive websites.</li>
               <li>Gained abundant experience creating and building websites with HTML, CSS, JavaScript and PHP.</li>
-              <li>In charge of Project Manager, converted, redesigned and added functions legacy sites include 100+ page to responsive design. Carried out without delay by thorough schedule and resource management.</li>
+              <li>As a project manager, converted, redesigned and added functions legacy sites include 100+ pages to responsive design. Carried out without delay by thorough schedule and resource management.</li>
               <li>Led and mentored newcomers.</li>
             </ul>
           </div>
@@ -75,6 +75,7 @@ export default function About() {
                 <li>Wire framing</li>
                 <li>Prototyping</li>
                 <li>UI/UX</li>
+                <li>Acsessibility</li>
                 <li>Banner design</li>
                 <li>LP design</li>
                 <li>Brand-site design</li>
@@ -130,6 +131,7 @@ export default function About() {
                 <li>Project management</li>
                 <li>Project direction</li>
                 <li>Progress management</li>
+                <li>Meeting</li>
                 <li>SEO</li>
                 <li>Training</li>
                 <li>Improve work efficiency</li>
