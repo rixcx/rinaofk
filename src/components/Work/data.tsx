@@ -10,27 +10,28 @@ export type WorkProps = {
 const data: WorkProps[] = [
   {
     id: "1",
-    title: "Previous portfolio site",
-    caption: "caption text",
+    title: "Previous Portfolio - and-rix",
+    caption: "a website about me",
     url: "pre_portfolio",
     imageSrc: "/01.png",
-    tools: ["XD","VSCode","figma"],
+    tools: ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"],
+    
   },
   {
     id: "2",
     title: "r.blog",
-    caption: "caption text",
+    caption: "a technology blog",
     url: "rblog",
     imageSrc: "/02.png",
-    tools: ["XD","VSCode","photoshop"],
+    tools: ["Figma","Next.js","Sass(SCSS)","git(CUI)","GitHub","Docker-compose"],
   },
   {
     id: "3",
-    title: "portfolio site",
+    title: "Portfolio - rinaofk",
     caption: "caption text",
-    url: "portfolio",
+    url: "a website about me",
     imageSrc: "/02.png",
-    tools: ["XD","VSCode","docker"],
+    tools: ["Figma","Next.js(Typescript)","Sass(SCSS)","Emotion","git(CUI)","GitHub","Docker-compose"],
   },
 ];
 

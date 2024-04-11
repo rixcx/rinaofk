@@ -3,16 +3,32 @@
 import { css } from '@emotion/react'
 import * as global from '../../app/common/global'
 
+import Link from 'next/link'
+
 export default function Footer() {
   return (
   <footer css={[global.container,footer]}>
     <small>&copy; 2023 rinaofk</small>
     <nav>
       <ul>
-        <li><a href="#">xxx@gmail.com</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">Resume</a></li>
+        <li>
+          <span css={mail}>xxx</span>
+        </li>
+        <li>
+          <Link href="https://github.com/rixcx" rel="noopener noreferrer" target="_blank">
+            GitHub
+          </Link>
+        </li>
+        <li>
+          <Link href="https://linkedin.com/in/rina-ofuku-3329002b9" rel="noopener noreferrer" target="_blank">
+            Linkedin
+          </Link>
+        </li>
+        <li>
+          <Link href="/common/RinaOfuku-resume.pdf" rel="noopener noreferrer" target="_blank">
+            Resume
+          </Link>
+        </li>
       </ul>
     </nav>
   </footer>
@@ -67,3 +83,9 @@ export const footer = css`
     }
   }
 `;
+
+export const mail = css`
+  &::after {
+    content:"@gmail.com"
+  }
+`

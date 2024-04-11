@@ -24,9 +24,6 @@ export const Work = () => {
           </div>
           <dl css={desc}>
             <dt>{work.title}</dt>
-            <dd>{work.url}</dd>
-            <dd>{work.id}</dd>
-            <dd>{work.caption}</dd>
           </dl>
             <ul css={tags}>
             {work.tools.map((tool) => (
