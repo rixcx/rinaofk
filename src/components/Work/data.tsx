@@ -13,7 +13,7 @@ const data: WorkProps[] = [
     title: "Previous Portfolio - and-rix",
     caption: "a website about me",
     url: "pre_portfolio",
-    imageSrc: "/01.png",
+    imageSrc: "/works/img_works_preportfolio.png",
     tools: ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"],
     
   },
@@ -22,7 +22,7 @@ const data: WorkProps[] = [
     title: "r.blog",
     caption: "a technology blog",
     url: "rblog",
-    imageSrc: "/02.png",
+    imageSrc: "/works/img_works_rblog.png",
     tools: ["Figma","Next.js","Sass(SCSS)","git(CUI)","GitHub","Docker-compose"],
   },
   {
@@ -30,7 +30,7 @@ const data: WorkProps[] = [
     title: "Portfolio - rinaofk",
     caption: "a website about me",
     url: "portfolio",
-    imageSrc: "/02.png",
+    imageSrc: "/works/img_works_portfolio.png",
     tools: ["Figma","Next.js(Typescript)","Sass(SCSS)","Emotion","git(CUI)","GitHub","Docker-compose"],
   },
 ];

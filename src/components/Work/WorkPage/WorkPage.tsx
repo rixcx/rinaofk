@@ -16,7 +16,7 @@ export const PrePortfolio = () => {
       <h1 css={title}>Previous Portfolio - and-rix</h1>
       <div css={img}>
         <Image
-          src="https://placehold.co/1280x600.png"
+          src="/works/img_main_preportfolio.png"
           alt="Previous portfolio website"
           width={1280}
           height={600}
@@ -49,7 +49,7 @@ export const PrePortfolio = () => {
           </div>
           <div css={detail_img}>
             <Image
-              src="https://placehold.co/612x394.png"
+              src="/works/img_sub_preportfolio.png"
               alt="detail"
               width={612}
               height={394}
@@ -74,7 +74,7 @@ export const Rblog = () => {
       <h1 css={title}>r.blog</h1>
       <div css={img}>
         <Image
-          src="https://placehold.co/1280x600.png"
+          src="/works/img_main_rbrog.png"
           alt="r.blog"
           width={1280}
           height={600}
@@ -107,7 +107,7 @@ export const Rblog = () => {
           </div>
           <div css={detail_img}>
             <Image
-              src="https://placehold.co/612x394.png"
+              src="/works/img_sub_rblog.png"
               alt="detail"
               width={612}
               height={394}
@@ -132,7 +132,7 @@ export const Portfolio = () => {
       <h1 css={title}>Portfolio - rinaofk</h1>
       <div css={img}>
         <Image
-          src="https://placehold.co/1280x600.png"
+          src="/works/img_main_portfolio.png"
           alt="r.blog"
           width={1280}
           height={600}
@@ -165,7 +165,7 @@ export const Portfolio = () => {
           </div>
           <div css={detail_img}>
             <Image
-              src="https://placehold.co/612x394.png"
+              src="/works/img_sub_portfolio.png"
               alt="detail"
               width={612}
               height={394}

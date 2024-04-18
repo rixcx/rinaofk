@@ -12,7 +12,7 @@ export default function Footer() {
     <nav>
       <ul>
         <li>
-          <span css={mail}>xxx</span>
+          <span css={mail}>rs.ivy04</span>
         </li>
         <li>
           <Link href="https://github.com/rixcx" rel="noopener noreferrer" target="_blank">

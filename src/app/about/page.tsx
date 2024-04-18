@@ -18,7 +18,7 @@ export default function About() {
             </div>
             <div css={img}>
               <Image
-                src="/about/img_intro.png"
+                src="/about/img_main.png"
                 alt="rinaofk"
                 width={430}
                 height={470}

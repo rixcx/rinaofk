@@ -16,7 +16,7 @@ export const Work = () => {
         <div css={item} key={work.id}>
             <div css={img}>
             <Image
-              src="https://placehold.co/295x200.png"
+              src={work.imageSrc}
               alt="Vercel Logo"
               width={295}
               height={200}
@@ -48,6 +48,8 @@ export const list = css`
   }
 `
 export const item = css`
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: 0;
   left: 0;
@@ -123,6 +125,7 @@ export const tags = css`
 
 export const link = css`
   text-align: right;
+  margin-top: auto;
 
   > a {
     display: inline-block;
