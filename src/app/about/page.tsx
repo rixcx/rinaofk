@@ -18,7 +18,7 @@ export default function About() {
             </div>
             <div css={img}>
               <Image
-                src="/about/img_main.png"
+                src="/about/img_main.jpg"
                 alt="rinaofk"
                 width={430}
                 height={470}
@@ -150,7 +150,7 @@ export default function About() {
             <div css={consist_wrap}>
               <div css={consist_img}>
                 <Image
-                  src="/about/img_consist01.png"
+                  src="/about/img_consist_01.jpg"
                   alt="Travel"
                   width={336}
                   height={318}
@@ -159,7 +159,7 @@ export default function About() {
               </div>
               <div css={consist_img}>
                 <Image
-                  src="/about/img_consist02.png"
+                  src="/about/img_consist_02.jpg"
                   alt="spicy food"
                   width={336}
                   height={318}
@@ -168,7 +168,7 @@ export default function About() {
               </div>
               <div css={consist_img}>
                 <Image
-                  src="/about/img_consist03.png"
+                  src="/about/img_consist_03.jpg"
                   alt="the goofy faces"
                   width={336}
                   height={318}

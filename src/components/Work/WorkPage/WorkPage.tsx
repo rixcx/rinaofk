@@ -97,7 +97,8 @@ export const Rblog = () => {
           <Button
           type="borderd"
           link="/about"
-        >See this project ➔</Button>
+          css={link}
+        >See this project</Button>
       </section>
       
       <section css={detail}>
@@ -155,7 +156,8 @@ export const Portfolio = () => {
           <Button
           type="borderd"
           link="/about"
-        >See this project ➔</Button>
+          css={link}
+        >See this project</Button>
       </section>
       
       <section css={detail}>
