@@ -38,7 +38,8 @@ export const PrePortfolio = () => {
           <Button
           type="borderd"
           link="/about"
-        >See this project ➔</Button>
+          css={link}
+        >See this project</Button>
       </section>
       
       <section css={detail}>
@@ -103,11 +104,11 @@ export const Rblog = () => {
         <div css={detail_item}>
           <div css={detail_txt}>
             <h3>Different approaches</h3>
-            <p>I was following the tutorial for most of the process of making it. However, I devised some points, for example, using docker-compose, CSS Modules, and libraries to add new functions.</p>
+            <p>I was following the official tutorial of microCMS for most of the process of making it. However, I devised some points, for example, using docker-compose, CSS Modules, and libraries to add new functions.</p>
           </div>
           <div css={detail_img}>
             <Image
-              src="/works/img_sub_rblog.png"
+              src="/works/img_sub_rbrog.png"
               alt="detail"
               width={612}
               height={394}
@@ -240,6 +241,41 @@ export const specifics = css`
     }
   }
 `
+export const link = css`
+  position: relative;
+  padding: 17px 80px 17px 60px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    background:#333;
+    height:2px;
+    transition: all .3s;
+  }
+  
+  &::before {
+    top: calc(50% + 2px);
+    right: 20px;
+    width: 30px;
+  }
+  
+  &::after {
+    top: calc(50% - 2px);
+    right:20px;
+    width: 12px;
+    transform: rotate(35deg);
+  }
+  
+  &:hover {
+    &::before{
+      right:16px;
+    }
+    
+    &::after{
+      right:16px;
+    }
+  }
+`
 export const detail = css`
   margin-bottom: 160px;
   padding-top: 160px;
@@ -269,9 +305,13 @@ export const detail_item = css`
 `
 export const detail_txt = css`
   width: 40%;
+  min-width: 400px;
+  padding-right: 30px;
 
   ${global.sp} {
     width: 100%;
+    min-width: auto;
+    padding-right: 0;
   }
 
   > h3 {
