@@ -16,7 +16,7 @@ export default function About() {
               <h2>rinaofk</h2>
               <p>I am a Web developer with experience in designing multiple websites for BtoC and developing various functions.<br />I have experienced practical works in renewing old sites, creating attractive LP and adding new features.<br />I feel fulfillment in ensuring customer and user satisfaction by solving problems and by giving them value through web solutions.</p>
             </div>
-            <div css={img}>
+            <div css={photo}>
               <Image
                 src="/about/img_main.jpg"
                 alt="rinaofk"
@@ -247,7 +247,7 @@ export const desc = css`
     }
   }
 `
-export const img = css`
+export const photo = css`
   position: relative;
   top: -80px;
   width: 430px;
