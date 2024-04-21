@@ -3,7 +3,7 @@
 import { css } from '@emotion/react';
 import * as global from '../common/global'
 
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function About() {
   return (
