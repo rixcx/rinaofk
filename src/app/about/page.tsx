@@ -17,12 +17,7 @@ export default function About() {
               <p>I am a Web developer with experience in designing multiple websites for BtoC and developing various functions.<br />I have experienced practical works in renewing old sites, creating attractive LP and adding new features.<br />I feel fulfillment in ensuring customer and user satisfaction by solving problems and by giving them value through web solutions.</p>
             </div>
             <div css={photo}>
-              <Image
-                src="/about/img_main.jpg"
-                alt="rinaofk"
-                width={430}
-                height={470}
-              />
+
             </div>
           </section>
         </div>
@@ -157,30 +152,12 @@ export default function About() {
             <h2>What constitutes me are....</h2>
             <div css={consist_wrap}>
               <div css={consist_img}>
-                <Image
-                  src="/about/img_consist_01.jpg"
-                  alt="Travel"
-                  width={336}
-                  height={318}
-                />
                 <p>I always think travel. I love thinking about where to go, what to experience, and how to go there. Current my dream is to travel Europe becouse I haven't gone.</p>
               </div>
               <div css={consist_img}>
-                <Image
-                  src="/about/img_consist_02.jpg"
-                  alt="spicy food"
-                  width={336}
-                  height={318}
-                />
                 <p>I can't live without spicy food. I have visited to Korea just to indulge in spicy food, or I have grown chili peppers by myself to eat them.</p>
               </div>
               <div css={consist_img}>
-                <Image
-                  src="/about/img_consist_03.jpg"
-                  alt="the goofy faces"
-                  width={336}
-                  height={318}
-                />
                 <p>I have a weakness for the goofy faces of birds even though I can't explain why. </p>
               </div>
             </div>
