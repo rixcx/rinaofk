@@ -233,15 +233,6 @@ export const photo = css`
     width: 80%;
   }
 
-  > img {
-    border: 2px solid var(--color-black);
-    border-radius: 170px 10px 10px 10px;
-    
-    ${global.sp} {
-      border-radius: 120px 10px 10px 10px;
-    }
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -540,12 +531,6 @@ export const consist_img = css`
     + div {
       margin-top: 40px;
     }
-  }
-
-  img {
-    margin-bottom: 15px;
-    border: 2px solid var(--color-black);
-    border-radius: 10px;
   }
   
   p {
