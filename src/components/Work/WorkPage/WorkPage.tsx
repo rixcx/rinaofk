@@ -11,7 +11,7 @@ import { Button } from '../../../components/elements/button/button';
 import Data from '../data';
 
 export const PrePortfolio = () => {
-  return (
+  return ( 
     <section css={[global.container]}>
       <h1 css={title}>Previous Portfolio - and-rix</h1>
       <div css={img}>
@@ -28,7 +28,7 @@ export const PrePortfolio = () => {
         <dl css={specifics}>
           <div>
             <dt>Duration</dt>
-            <dd>2022  / 1 month（2021/12/10 - 2022/1/4）</dd>
+            <dd>2022  / 1 month (2021/12/10 - 2022/1/4)</dd>
           </div>
           <div>
             <dt>Tools</dt>
@@ -87,7 +87,7 @@ export const Rblog = () => {
         <dl css={specifics}>
           <div>
             <dt>Duration</dt>
-            <dd>2022  / 1 month（2021/12/28 - 2022/1/25）</dd>
+            <dd>2022  / 1 month (2021/12/28 - 2022/1/25)</dd>
           </div>
           <div>
             <dt>Tools</dt>
@@ -146,7 +146,7 @@ export const Portfolio = () => {
         <dl css={specifics}>
           <div>
             <dt>Duration</dt>
-            <dd>2024  / 2 month（2024/2/19 - 3/19 - 4/15）</dd>
+            <dd>2024  / 2 month (2024/2/19 - 4/20)</dd>
           </div>
           <div>
             <dt>Tools</dt>
@@ -230,9 +230,11 @@ export const specifics = css`
   
   > div {
     + div {
+      width: 60%;
       margin: 0 0 0 80px;
       
       ${global.sp} {
+        width: 100%;
         margin: 30px 0 0 0;
       }
     }

@@ -66,6 +66,14 @@ export default function About() {
           </div>
         </section>
   
+        <section css={[global.container, lang]}>
+          <h2 css={lang_ttl}>Language</h2>
+          <ul css={lang_list}>
+            <li>Japanese ― Native</li>
+            <li>English ― Upper-intermediate (CEFR B2)</li>
+          </ul>
+        </section>
+  
         <section css={[global.container, skill]}>
           <h2 css={skill_tll}>Skill set</h2>
           <div css={skill_wrap}>
@@ -362,6 +370,37 @@ export const edu_txt = css`
   
   > p {
     font-size: var(--font-lg);
+  }
+`
+export const lang = css`
+  margin-bottom: 160px;
+  
+  ${global.sp} {
+    margin-bottom: 100px;
+  }
+`
+export const lang_ttl = css`
+  ${ex_ttl}
+`
+export const lang_list = css`
+  > li {
+    position: relative;
+    padding-left: 1em;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.65em;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: var(--color-black);
+      border-radius: 50%;
+    }
+    
+    & + li {
+      margin-top: 0.8em;
+    }
   }
 `
 export const skill = css`

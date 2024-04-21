@@ -17,7 +17,7 @@ export default function Home() {
       <section css={[global.container,hero_bg]}>
         <div css={hero}>
           <h1 css={hero_title}>&#x1F427;<br css={global.sp_only} /> Hello. <br css={global.sp_only} />I'm <span>Rina</span>,<br />a Creative web developer.</h1>
-          <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan, passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
+          <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan. Passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
           <Button
             type="whiteSolid"
             link="/about"
