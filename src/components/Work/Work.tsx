@@ -38,7 +38,7 @@ export const Work = () => {
 }
 
 /*---------- css ----------*/
-export const list = css`
+const list = css`
   display: grid;
   grid-template-columns: 32% 32% 32%;
   gap: 21px;
@@ -47,7 +47,7 @@ export const list = css`
     grid-template-columns: auto;
   }
 `
-export const item = css`
+const item = css`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -88,7 +88,7 @@ export const item = css`
   }
 `
 
-export const img = css`
+const img = css`
   margin-bottom: 26px;
 
   > img {
@@ -98,7 +98,7 @@ export const img = css`
   }
 `
 
-export const desc = css`
+const desc = css`
   margin-bottom: 26px;
   
   > dt {
@@ -107,7 +107,7 @@ export const desc = css`
   }
 `
 
-export const tags = css`
+const tags = css`
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -123,7 +123,7 @@ export const tags = css`
   }
 `
 
-export const link = css`
+const link = css`
   text-align: right;
   margin-top: auto;
 

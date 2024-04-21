@@ -56,7 +56,7 @@ export default function Home() {
 }
 
 /*---------- css ----------*/
-export const hero_bg = css`
+const hero_bg = css`
   &::before {
     content: "";
     position: absolute;
@@ -69,7 +69,7 @@ export const hero_bg = css`
     margin: 0 calc(50% - 50vw);
   }
 `;
-export const hero = css`
+const hero = css`
   position: relative;
   margin-bottom: calc(160px + 10px);
   padding: 125px 100px 80px 185px;
@@ -96,7 +96,7 @@ export const hero = css`
     background-color: var(--color-secondary);
   }
 `;
-export const hero_title = css`
+const hero_title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 0.7em;
@@ -126,32 +126,32 @@ export const hero_title = css`
     }
   }
 `
-export const hero_desc = css`
+const hero_desc = css`
   margin-bottom: 2em;
 `
-export const works = css`
+const works = css`
   /* margin-bottom: 160px;
   
   ${global.sp} {
     margin-bottom: 0;
   } */
 `
-export const works_title = css`
+const works_title = css`
   font-size: var(--font-02);
   font-weight: bold;
   margin-bottom: 0.8em;
 `
-export const about_bg = css`
+const about_bg = css`
   background-color: var(--color-secondary);
   padding: 160px 0;
 `
 
-export const about = css`
+const about = css`
   display: flex;
   justify-content: center;
   align-items: flex-end;
 `
-export const about_desc = css`
+const about_desc = css`
   width: 34.3%;
   margin-right: 58px;
   
@@ -165,7 +165,7 @@ export const about_desc = css`
     margin-bottom: 40px;
   }
 `
-export const about_img = css`
+const about_img = css`
   position: relative;
   width: 400px;
 

@@ -36,7 +36,7 @@ export default function Footer() {
 }
 
 /*---------- css ----------*/
-export const footer = css`
+const footer = css`
   display: flex;
   justify-content: space-between;
   padding-top: 160px;
@@ -84,7 +84,7 @@ export const footer = css`
   }
 `;
 
-export const mail = css`
+const mail = css`
   &::after {
     content:"@gmail.com"
   }

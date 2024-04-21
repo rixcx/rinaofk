@@ -29,12 +29,12 @@ export default function Header() {
 }
 
 /*---------- css ----------*/
-export const header = css`
+const header = css`
   position: relative;
   z-index: 99;
 `;
 
-export const wrap = css`
+const wrap = css`
   display: flex;
   justify-content: space-between;
   padding: 35px 0;
@@ -44,7 +44,7 @@ export const wrap = css`
   }
 `;
 
-export const logo = css`
+const logo = css`
   width: 32px;
   
   ${global.sp} {
@@ -52,7 +52,7 @@ export const logo = css`
   }
 `;
 
-export const menu = css`
+const menu = css`
   display: flex;
   justify-content: space-between;
   align-items: center;

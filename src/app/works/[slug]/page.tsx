@@ -36,14 +36,14 @@ function Page() {
 }
 
 /*---------- css ----------*/
-export const main = css`
+const main = css`
   margin-top: 100px;
   
   ${global.sp} {
     margin-top: 60px;
   }
 `;
-export const title = css`
+const title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;

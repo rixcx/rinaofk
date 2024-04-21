@@ -188,7 +188,7 @@ export const Portfolio = () => {
 }
 
 /*---------- css ----------*/
-export const title = css`
+const title = css`
   font-size: var(--font-01);
   font-weight: bold;
   margin-bottom: 100px;
@@ -197,7 +197,7 @@ export const title = css`
     margin-bottom: 40px;
   }
 `
-export const img = css`
+const img = css`
   width: 100vw;
   height: 100%;
   margin: 0 calc(50% - 50vw) 80px;
@@ -206,7 +206,7 @@ export const img = css`
     margin-bottom: 40px;
   }
 `
-export const overview = css`
+const overview = css`
   margin-bottom: 160px;
 
   ${global.sp} {
@@ -219,7 +219,7 @@ export const overview = css`
     margin-bottom: 0.6em;
   }
 `
-export const specifics = css`
+const specifics = css`
   margin: 60px 0 80px;
   display: flex;
 
@@ -245,7 +245,7 @@ export const specifics = css`
     }
   }
 `
-export const link = css`
+const link = css`
   position: relative;
   padding: 17px 80px 17px 60px;
 
@@ -280,7 +280,7 @@ export const link = css`
     }
   }
 `
-export const detail = css`
+const detail = css`
   margin-bottom: 160px;
   padding-top: 160px;
   border-top: 2px solid var(--color-black);
@@ -290,7 +290,7 @@ export const detail = css`
     padding-top: 100px;
   }
 `
-export const detail_item = css`
+const detail_item = css`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -307,7 +307,7 @@ export const detail_item = css`
     }
   }
 `
-export const detail_txt = css`
+const detail_txt = css`
   width: 40%;
   min-width: 400px;
   padding-right: 30px;
@@ -324,7 +324,7 @@ export const detail_txt = css`
    font-weight: bold;
   }
 `
-export const detail_img = css`
+const detail_img = css`
   width: 612px;
   
   ${global.sp} {
@@ -332,7 +332,7 @@ export const detail_img = css`
     width: 100%;
   }
 `
-export const discover = css`
+const discover = css`
   width: 100vw;
   height: 100%;
   margin: 0 calc(50% - 50vw);
