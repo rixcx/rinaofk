@@ -12,7 +12,8 @@ export default function About() {
 }
 
 /*---------- css ----------*/
-export const test = css`
+const test = css`
   margin-top: 100px;
+  color: red;
 
 `;
