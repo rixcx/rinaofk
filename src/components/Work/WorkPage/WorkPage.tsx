@@ -20,6 +20,7 @@ export const PrePortfolio = () => {
           alt="Previous portfolio website"
           width={1280}
           height={600}
+          priority
         />
       </div>
       <section css={overview}>
@@ -79,6 +80,7 @@ export const Rblog = () => {
           alt="r.blog"
           width={1280}
           height={600}
+          priority
         />
       </div>
       <section css={overview}>
@@ -138,6 +140,7 @@ export const Portfolio = () => {
           alt="r.blog"
           width={1280}
           height={600}
+          priority
         />
       </div>
       <section css={overview}>

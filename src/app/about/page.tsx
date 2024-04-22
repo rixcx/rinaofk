@@ -22,6 +22,7 @@ export default function About() {
                 alt="rinaofk"
                 width={430}
                 height={470}
+                priority
               />
             </div>
           </section>

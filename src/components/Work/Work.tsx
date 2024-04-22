@@ -25,6 +25,7 @@ export const Work = () => {
                     alt="Vercel Logo"
                     width={295}
                     height={200}
+                    priority
                   />
                 </div>
                 <dl css={desc}>
