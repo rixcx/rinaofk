@@ -13,25 +13,27 @@ export const Work = () => {
   return (
     <div css={list}>
       {Data.map((work) => (
-        <div css={item} key={work.id}>
-            <div css={img}>
-            <Image
-              src={work.imageSrc}
-              alt="Vercel Logo"
-              width={295}
-              height={200}
-            />
+        <Link href={`/works/${work.url}`} >
+          <div css={item} key={work.id}>
+              <div css={img}>
+              <Image
+                src={work.imageSrc}
+                alt="Vercel Logo"
+                width={295}
+                height={200}
+              />
+            </div>
+            <dl css={desc}>
+              <dt>{work.title}</dt>
+            </dl>
+              <ul css={tags}>
+              {work.tools.map((tool) => (
+                <li key={tool}>{tool}</li>
+              ))}
+            </ul>
+            <div css={link} className="hover">Read more</div>
           </div>
-          <dl css={desc}>
-            <dt>{work.title}</dt>
-          </dl>
-            <ul css={tags}>
-            {work.tools.map((tool) => (
-              <li key={tool}>{tool}</li>
-            ))}
-          </ul>
-          <div css={link} className="hover"><Link href={`/works/${work.url}`} >Read more</Link></div>
-        </div>
+        </Link>
       ))}
     </div>
   );
@@ -82,7 +84,7 @@ const item = css`
       left: 10px;
     }
     
-    & .hover a {
+    & .hover {
       text-decoration: underline 1.5px;
     }
   }
@@ -126,12 +128,9 @@ const tags = css`
 const link = css`
   text-align: right;
   margin-top: auto;
-
-  > a {
-    display: inline-block;
-    transition: all .15s;
-    text-decoration: underline transparent;
-    text-underline-offset: 3px;
-  }
+  display: inline-block;
+  transition: all .15s;
+  text-decoration: underline transparent;
+  text-underline-offset: 3px;
 `
 
