@@ -35,11 +35,11 @@ export const PrePortfolio = () => {
             <dd>Adobe XD,  VScode,  HTML,  Sass(SCSS),  gulp,  git(CUI),  GitHub,  Docker</dd>
           </div>
         </dl>
-          <Button
+          {/* <Button
           type="borderd"
-          link="/about"
+          link="/"
           css={link}
-        >See this project</Button>
+        >See this project</Button> */}
       </section>
       
       <section css={detail}>

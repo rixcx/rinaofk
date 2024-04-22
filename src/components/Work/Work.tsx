@@ -16,26 +16,28 @@ export const Work = () => {
   return (
     <div css={list}>
       {Data.map((work) => (
-        <Link href={`/works/${work.url}`} >
           <div css={item} key={work.id}>
-              <div css={img}>
-              <Image
-                src={work.imageSrc}
-                alt="Vercel Logo"
-                width={295}
-                height={200}
-              />
-            </div>
-            <dl css={desc}>
-              <dt>{work.title}</dt>
-            </dl>
-            <Tools
-              tools={work.tools}
-              css={tags}
-            ></Tools>
-            <div css={link} className="hover">Read more</div>
+            <Link href={`/works/${work.url}`} >
+              <div css={inner}>
+                <div css={img}>
+                  <Image
+                    src={work.imageSrc}
+                    alt="Vercel Logo"
+                    width={295}
+                    height={200}
+                  />
+                </div>
+                <dl css={desc}>
+                  <dt>{work.title}</dt>
+                </dl>
+                <Tools
+                  tools={work.tools}
+                  css={tags}
+                ></Tools>
+                <div css={link} className="hover">Read more</div>
+              </div>
+            </Link>
           </div>
-        </Link>
       ))}
     </div>
   );
@@ -53,11 +55,9 @@ const list = css`
 `
 const item = css`
   display: flex;
-  flex-direction: column;
   position: relative;
   top: 0;
   left: 0;
-  padding: 22px 20px 30px 20px;
   border: 2px solid var(--color-black);
   border-radius: 10px;
   background-color: var(--color-white);
@@ -90,6 +90,15 @@ const item = css`
       text-decoration: underline 1.5px;
     }
   }
+  
+  a {
+  display: flex;
+  }
+`
+const inner = css`
+  display: flex;
+  flex-direction: column;
+  padding: 22px 20px 30px 20px;
 `
 
 const img = css`
