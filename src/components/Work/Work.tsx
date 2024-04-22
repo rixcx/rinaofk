@@ -9,7 +9,10 @@ import Image from "next/image";
 
 import Data from './data';
 
+import { Tools } from '../../components/elements/tools/tools';
+
 export const Work = () => {
+
   return (
     <div css={list}>
       {Data.map((work) => (
@@ -26,11 +29,10 @@ export const Work = () => {
             <dl css={desc}>
               <dt>{work.title}</dt>
             </dl>
-              <ul css={tags}>
-              {work.tools.map((tool) => (
-                <li key={tool}>{tool}</li>
-              ))}
-            </ul>
+            <Tools
+              tools={work.tools}
+              css={tags}
+            ></Tools>
             <div css={link} className="hover">Read more</div>
           </div>
         </Link>
@@ -108,23 +110,9 @@ const desc = css`
     font-size: var(--font-05);
   }
 `
-
 const tags = css`
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
   margin-bottom: 26px;
-  
-  > li {
-    padding: 5px 15px;
-    border-radius: 30px;
-    font-size: 12px;
-    line-height: normal;
-    color: var(--color-gray-dark);
-    background-color: var(--color-gray-light);
-  }
 `
-
 const link = css`
   text-align: right;
   margin-top: auto;
