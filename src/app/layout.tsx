@@ -1,8 +1,3 @@
-'use client'
-/** @jsxImportSource @emotion/react */
-import { Global, css } from "@emotion/react";
-import * as global from '../app/common/global'
-
 import { Ubuntu } from "next/font/google";
 
 import './common/destyle.css';
@@ -23,30 +18,6 @@ export default function RootLayout({
 }>) {
   return (
   <>
-    <Global
-      styles={css`
-        html {
-          font-size: 62.5%;
-        }
-      
-        body {
-          overflow-x: hidden;
-          font-family: sans-serif;
-          font-size: var(--font-base);
-          font-weight: 400;
-          letter-spacing: 0.01em;
-          line-height: 1.6;
-          color: var(--color-black);
-          background-color: var(--color-background);
-        }
-        
-        h1,h2,h3,h4,h5,h6 {
-          line-height: normal;
-        }
-        
-      `}
-    />
-  
     <html lang="en">
      <head>
         <title>rinaofk</title>
