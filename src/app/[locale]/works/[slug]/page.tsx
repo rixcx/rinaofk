@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation'
 // →追々slugからMDファイルのデータを読み込む形式とする
 
 // →一旦各ページごとに作ったcomponentを読み込む
-import { PrePortfolio, Rblog, Portfolio } from '../../../components/Work/WorkPage/WorkPage';
+import { PrePortfolio, Rblog, Portfolio } from '../../../../components/Work/WorkPage/WorkPage';
 
 export default function WorkPage() {
 

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { Work } from '../../components/Work/Work';
+import { Work } from '../../../components/Work/Work';
 
-import Data from '../../components/Work/data';
+import Data from '../../../components/Work/data';
 
 export default function Works() {
   return (
