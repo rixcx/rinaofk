@@ -6,6 +6,8 @@ import './common/variables.css';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 
+import LocaleSwitcher from '../../components/LocaleSwitcher'
+
 const ubuntu = Ubuntu({
   weight: ['300','400','500','700'],
   subsets: ['latin'],
@@ -26,6 +28,7 @@ export default function LocaleLayout({
         <meta name='description' content='Hello. I’m Rina, Web Designer and developer.' />
       </head>
       <body className={ubuntu.className}>
+      <LocaleSwitcher />
         <Header />
         {children}
         <Footer />
