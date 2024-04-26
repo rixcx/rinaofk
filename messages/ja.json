@@ -1,5 +1,16 @@
 {
   "Index": {
     "title": "こんにちは世界！"
+  },
+  "Works": {
+    "rblog": {
+      "title": "ブログ"
+    },
+    "pre_portfolio": {
+      "title": "プレポートフォリオ"
+    },
+    "portfolio": {
+      "title": "ポートフォリオ"
+    }
   }
 }

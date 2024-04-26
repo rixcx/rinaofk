@@ -1,32 +1,17 @@
-"use client"
+
 import Image from "next/image";
+import Desc from '../../../../components/Work/Desc';
 
-import { useParams } from 'next/navigation'
-// slugからそれぞれのデータを抜き出す
-// →追々slugからMDファイルのデータを読み込む形式とする
-
-// →一旦各ページごとに作ったcomponentを読み込む
-import { PrePortfolio, Rblog, Portfolio } from '../../../../components/Work/WorkPage/WorkPage';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 export default function WorkPage() {
-
-const params = useParams<{slug: string}>()
-const url = params.slug;
-
-// slugに応じたcomponentを読み込む
-function Page() {
-  if (url == "pre_portfolio") {
-    return <PrePortfolio />;
-  } else if (url == "rblog") {
-    return <Rblog />;
-  } else if (url == "portfolio"){
-    return <Portfolio/>;
-  }
-}
+  const messages = useMessages();
 
   return (
     <main>
-      <Page />
+        <NextIntlClientProvider messages={messages}>
+          <Desc/>
+        </NextIntlClientProvider>
     </main>
   )
 }
