@@ -1,21 +1,20 @@
-"use client"
+'use client'
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from '@emotion/react'
 import * as global from '../../app/[locale]/common/global'
 
 import { useTranslations } from 'next-intl';
 
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Header() {
-
-  const t = useTranslations("Header");
 
   return (
     <header css={[global.container, header]}>
       <nav css={wrap}>
         <h1 style={{display: 'none'}}>rinaofk</h1>
-        <a css={logo} href="/">
+        <Link css={logo} href="/" >
           <Image
             src="/common/logo.svg"
             alt="rinaofk"
@@ -23,10 +22,10 @@ export default function Header() {
             height={50.20}
             priority
           />
-        </a>
+        </Link>
         <ul css={menu}>
-          <li><a href="/about">{t('about')}</a></li>
-          <li><a href="/works">{t('works')}</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/works">Works</a></li>
         </ul>
       </nav>
     </header>
