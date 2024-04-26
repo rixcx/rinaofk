@@ -2,6 +2,10 @@
   "Index": {
     "title": "こんにちは世界！"
   },
+  "Header": {
+    "about": "アバウト",
+    "works": "ワークス"
+  },
   "Works": {
     "rblog": {
       "title": "ブログ"

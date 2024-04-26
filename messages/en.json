@@ -2,6 +2,10 @@
   "Index": {
     "title": "Hello world!"
   },
+  "Header": {
+    "about": "About",
+    "works": "Works"
+  },
   "Works": {
     "rblog": {
       "title": "rblog"

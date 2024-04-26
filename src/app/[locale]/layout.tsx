@@ -1,7 +1,9 @@
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Ubuntu } from "next/font/google";
 
 import './common/destyle.css';
 import './common/variables.css';
+import './common/root.css';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
@@ -20,6 +22,9 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
+
+const messages = useMessages();
+
   return (
   <>
     <html lang={locale}>
@@ -29,9 +34,12 @@ export default function LocaleLayout({
       </head>
       <body className={ubuntu.className}>
       <LocaleSwitcher />
-        <Header />
-        {children}
-        <Footer />
+      
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   </>
