@@ -7,14 +7,35 @@
     "works": "ワークス"
   },
   "Works": {
-    "rblog": {
-      "title": "ブログ"
-    },
     "pre_portfolio": {
-      "title": "プレポートフォリオ"
+      "id": "1",
+      "title": "Previous Portfolio - and-rix",
+      "caption": "a website about me",
+      "type": "Website",
+      "url": "pre_portfolio",
+      "mainImageSrc": "/works/img_works_preportfolio.png",
+      "overview": "今まで使用経験のなかったVScode、git（CUI）、GitHubなどのツールを使用してポートフォリオを作成しました。",
+      "duration": "2022  / 1 month",
+      "tools": ["Adobe XD","VScode","HTML","Sass(SCSS)","gulp","git(CUI)","github","Docker"],
+      "pointTitle01":"Behind the creative",
+      "pointText01":"VScodeやgithubなど、一般的に使用されているツールを使った経験がなかったため、これらのツールの知識を習得するために、自分のウェブサイトを作る際に使用することにしました。また、仕事では対応ブラウザや業務効率の都合上使用経験が少なかったCSSのプロパティやSassの機能も積極的に使用し、新たなスキルを得る取り組みも行いました。",
+      "subImageSrc": "/works/img_sub_preportfolio.png",
+      "discoveredTitle": "Discovered",
+      "discoveredText": "環境構築を行う際には、単に設定を行うのではなく、このフローが何を行っているのかを常に理解しながら進めるよう心がけました。また、シンプルな構成のプロジェクトに対し新しいツールを試すことで、それぞれの基本的な使い方を学ぶことができました。この制作を通して得た知識や設定は、その後のプロジェクト制作においても大いに活かされています。"
+    },
+    "rblog": {
+      "title": "r.blog",
+      "caption": "テクノロジーブログです。",
+      "url": "rblog",
+      "imageSrc": "/works/img_works_rblog.png",
+      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
     },
     "portfolio": {
-      "title": "ポートフォリオ"
+      "title": "Portfolio - rinaofk",
+      "caption": "自分についてのウェブサイトです",
+      "url": "portfolio",
+      "imageSrc": "/works/img_works_portfolio.png",
+      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
     }
   }
 }

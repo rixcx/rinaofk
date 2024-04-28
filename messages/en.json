@@ -7,14 +7,35 @@
     "works": "Works"
   },
   "Works": {
-    "rblog": {
-      "title": "rblog"
-    },
     "pre_portfolio": {
-      "title": "pre_portfolio"
+      "id": "1",
+      "title": "Previous Portfolio - and-rix",
+      "caption": "a website about me",
+      "type": "Website",
+      "url": "pre_portfolio",
+      "mainImageSrc": "/works/img_works_preportfolio.png",
+      "overview": "This website was produced not only to introduce who I am and what I create but also for the purpose of learning to use tools that I haven't had experience such as VS code, git (CUI), and GitHub. ",
+      "duration": "2022  / 1 month",
+      "tools": ["Adobe XD","VScode","HTML","Sass(SCSS)","gulp","git(CUI)","github","Docker"],
+      "pointTitle01":"Behind the creative",
+      "pointText01":"I had no prior experience with commonly used tools; VScode, GitHub, etc. To acquire these tools knowledge, I decided to use them in creating my own website. Additionally, I actively used properties and functions that I had not had the opportunity to use in my work.",
+      "subImageSrc": "/works/img_sub_preportfolio.png",
+      "discoveredTitle": "Discovered",
+      "discoveredText": "When I set up the environment, I made a conscious effort to grasp the purpose behind each step, rather than simply going through set up it. Moreover, by utilizing new tools on projects with a simple structure, I was able to understand their basic usage. The knowledge gained through creating this project has been used in the production of subsequent projects."
+    },
+    "rblog": {
+      "title": "r.blog",
+      "caption": "a technology blog",
+      "url": "pre_portfolio",
+      "imageSrc": "/works/img_works_rblog.png",
+      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
     },
     "portfolio": {
-      "title": "portfolio"
+      "title": "Portfolio - rinaofk",
+      "caption": "a website about me",
+      "url": "pre_portfolio",
+      "imageSrc": "/works/img_works_portfolio.png",
+      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
     }
   }
 }

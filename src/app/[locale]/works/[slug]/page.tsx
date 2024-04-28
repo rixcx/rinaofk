@@ -16,16 +16,12 @@ export default function WorkPage() {
 
   return (
     <main css={main}>
-      <section>
-      <p>{url}</p>
-      <h1>{t('title')}</h1>
-      </section>
       <section css={[global.container]}>
-        <h1 css={title}>Previous Portfolio - and-rix</h1>
-        <div css={img}>
+        <h1 css={title}>{t('title')}</h1>
+        <div css={[img]}>
           <Image
-            src="/works/img_main_preportfolio.png"
-            alt="Previous portfolio website"
+            src={t('mainImageSrc')}
+            alt={t('title')}
             width={1280}
             height={600}
             priority
@@ -33,14 +29,15 @@ export default function WorkPage() {
         </div>
         <section css={overview}>
           <h2>Overview</h2>
-          <p>This website was produced not only to introduce who I am and what I create but also for the purpose of learning to use tools that I haven’t had experience such as VS code, git (CUI), and GitHub.</p>
+          <p>{t('overview')}</p>
           <dl css={specifics}>
             <div>
               <dt>Duration</dt>
-              <dd>2022  / 1 month (2021/12/10 - 2022/1/4)</dd>
+              <dd>{t('duration')}</dd>
             </div>
             <div>
               <dt>Tools</dt>
+              <dd>{t('tools')}</dd>
               <dd>Adobe XD,  VScode,  HTML,  Sass(SCSS),  gulp,  git(CUI),  GitHub,  Docker</dd>
             </div>
           </dl>
@@ -54,24 +51,23 @@ export default function WorkPage() {
         <section css={detail}>
           <div css={detail_item}>
             <div css={detail_txt}>
-              <h3>Behind the creative</h3>
-              <p>I had no prior experience with commonly used tools; VScode, GitHub, etc. To acquire these tools knowledge, I decided to use them in creating my own website. Additionally, I actively used properties and functions that I had not had the opportunity to use in my work.</p>
+              <h3>{t('pointTitle01')}</h3>
+              <p>{t('pointText01')}</p>
             </div>
             <div css={detail_img}>
               <Image
-                src="/works/img_sub_preportfolio.png"
-                alt="detail"
+                src={t('subImageSrc')}
+                alt={t('pointTitle01')}
                 width={612}
                 height={394}
               />
             </div>
           </div>
         </section>
-
         <section css={discover}>
           <div css={global.container}>
-            <h3>What discovered</h3>
-            <p>When I set up the environment, I made a conscious effort to grasp the purpose behind each step, rather than simply going through set up it. Moreover, by utilizing new tools on projects with a simple structure, I was able to understand their basic usage. The knowledge gained through creating this work has been used in the production of subsequent projects.</p>
+            <h3>{t('discoveredTitle')}</h3>
+            <p>{t('discoveredText')}</p>
           </div>
         </section>
       </section>
