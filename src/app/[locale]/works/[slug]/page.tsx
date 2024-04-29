@@ -8,19 +8,26 @@ import { useParams } from 'next/navigation'
 
 import Image from "next/image";
 
+import { Tools } from '../../../../components/elements/tools/tools';
+
+import JsonData from '../../../../../messages/en.json'; // 生のjsonデータをオブジェクトで受取
+import WorksInterface from '../../../../../messages/WorksInterface' //オブジェクトの型を指定
+const Works: WorksInterface = JsonData.Works //worksのデータを型指定してWorksに代入
+
 export default function WorkPage() {
 
   const params = useParams()
-  const url = params.slug;
-  const t = useTranslations('Works.'+ params.slug);
+  const url: string | string[] = params.slug
+  const t = useTranslations('Works.'+ url);
+  const work = Works[url as keyof typeof Works]
 
   return (
     <main css={main}>
       <section css={[global.container]}>
-        <h1 css={title}>{t('title')}</h1>
+        <h1 css={title}>{work.title}</h1>
         <div css={[img]}>
           <Image
-            src={t('mainImageSrc')}
+            src={work.mainImageSrc}
             alt={t('title')}
             width={1280}
             height={600}
@@ -33,12 +40,16 @@ export default function WorkPage() {
           <dl css={specifics}>
             <div>
               <dt>Duration</dt>
-              <dd>{t('duration')}</dd>
+              <dd>{work.duration}</dd>
             </div>
             <div>
               <dt>Tools</dt>
-              <dd>{t('tools')}</dd>
-              <dd>Adobe XD,  VScode,  HTML,  Sass(SCSS),  gulp,  git(CUI),  GitHub,  Docker</dd>
+              <dd>
+              <Tools
+                tools={work.tools}
+                css={tags}
+              ></Tools>
+              </dd>
             </div>
           </dl>
             {/* <Button
@@ -56,7 +67,7 @@ export default function WorkPage() {
             </div>
             <div css={detail_img}>
               <Image
-                src={t('subImageSrc')}
+                src={work.subImageSrc}
                 alt={t('pointTitle01')}
                 width={612}
                 height={394}
@@ -112,6 +123,17 @@ const overview = css`
     font-size: var(--font-04);
     font-weight: bold;
     margin-bottom: 0.6em;
+  }
+`
+const tags = css`
+  margin-bottom: 26px;
+  > li {
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: normal;
+    color: var(--color-gray-dark);
+    background-color: var(--color-white);
   }
 `
 const specifics = css`

@@ -7,10 +7,42 @@
     "works": "Works"
   },
   "Works": {
+    "portfolio": {
+      "id": "3",
+      "title": "Portfolio - rinaofk",
+      "caption": "caption",
+      "type": "Website",
+      "url": "portfolio",
+      "mainImageSrc": "/works/img_works_portfolio.png",
+      "overview": "This website was created with the purpose of replacing an existing portfolio site and building a project using Next.js.",
+      "duration": "2024  / 2 months",
+      "tools": ["Figma","VScode","Next.js(Typescript)","HTML","Sass(SCSS)","Emotion","git(CUI)","github","Docker-compose"],
+      "pointTitle01":"Generate a new one",
+      "pointText01":"I proceeded with the work with extreme care in making components, markup, and CSS design to ensure the site wouldn't be just HTML website. In addition, to gain new insights, I adopted Typescript and Emotion of CSS in JS, which tools could not be used for HTML or PHP.",
+      "subImageSrc": "/works/img_sub_portfolio.png",
+      "discoveredTitle": "Discovered",
+      "discoveredText": "I encountered challenges in applying CSS in JS to components, understanding the usage of props, and considering directory structure. Even though just one component, I realized that it requires skills different from Markup languages.This work enabled me to gain a basic usage of Next.js, React, and Typescript."
+    },
+    "rblog": {
+      "id": "2",
+      "title": "r.blog",
+      "caption": "caption",
+      "type": "Blog",
+      "url": "rblog",
+      "mainImageSrc": "/works/img_works_rblog.png",
+      "overview": "r.blog is a technology blog about production flow, solutions, and technical memos. It is used JAMstack with Next.js and microCMS.",
+      "duration": "2022  / 1 month",
+      "tools": ["Figma","VScode","Next.js","HTML","Sass(SCSS)","git(CUI)","github",  "Docker-compose"],
+      "pointTitle01":"Different approaches",
+      "pointText01":"I was following the tutorial for most of the process of making it. However, I devised some points, for example, using docker-compose, a different CSS approach, and libraries to add new functions.",
+      "subImageSrc": "/works/img_sub_rblog.png",
+      "discoveredTitle": "Discovered",
+      "discoveredText": "Initially, setting up the environment by using Docker posed a challenge, especially in understanding the concept of containers. After through trial and error, I was able to visualize how containers work in my mind. The process of implementing data get and display using API in Next.js led me to understand how Next.js manages data."
+    },
     "pre_portfolio": {
       "id": "1",
       "title": "Previous Portfolio - and-rix",
-      "caption": "a website about me",
+      "caption": "caption",
       "type": "Website",
       "url": "pre_portfolio",
       "mainImageSrc": "/works/img_works_preportfolio.png",
@@ -22,20 +54,6 @@
       "subImageSrc": "/works/img_sub_preportfolio.png",
       "discoveredTitle": "Discovered",
       "discoveredText": "When I set up the environment, I made a conscious effort to grasp the purpose behind each step, rather than simply going through set up it. Moreover, by utilizing new tools on projects with a simple structure, I was able to understand their basic usage. The knowledge gained through creating this project has been used in the production of subsequent projects."
-    },
-    "rblog": {
-      "title": "r.blog",
-      "caption": "a technology blog",
-      "url": "pre_portfolio",
-      "imageSrc": "/works/img_works_rblog.png",
-      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
-    },
-    "portfolio": {
-      "title": "Portfolio - rinaofk",
-      "caption": "a website about me",
-      "url": "pre_portfolio",
-      "imageSrc": "/works/img_works_portfolio.png",
-      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
     }
   }
 }

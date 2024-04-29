@@ -7,35 +7,53 @@
     "works": "ワークス"
   },
   "Works": {
-    "pre_portfolio": {
-      "id": "1",
-      "title": "Previous Portfolio - and-rix",
-      "caption": "a website about me",
-      "type": "Website",
-      "url": "pre_portfolio",
-      "mainImageSrc": "/works/img_works_preportfolio.png",
-      "overview": "今まで使用経験のなかったVScode、git（CUI）、GitHubなどのツールを使用してポートフォリオを作成しました。",
-      "duration": "2022  / 1 month",
-      "tools": ["Adobe XD","VScode","HTML","Sass(SCSS)","gulp","git(CUI)","github","Docker"],
-      "pointTitle01":"Behind the creative",
-      "pointText01":"VScodeやgithubなど、一般的に使用されているツールを使った経験がなかったため、これらのツールの知識を習得するために、自分のウェブサイトを作る際に使用することにしました。また、仕事では対応ブラウザや業務効率の都合上使用経験が少なかったCSSのプロパティやSassの機能も積極的に使用し、新たなスキルを得る取り組みも行いました。",
-      "subImageSrc": "/works/img_sub_preportfolio.png",
-      "discoveredTitle": "Discovered",
-      "discoveredText": "環境構築を行う際には、単に設定を行うのではなく、このフローが何を行っているのかを常に理解しながら進めるよう心がけました。また、シンプルな構成のプロジェクトに対し新しいツールを試すことで、それぞれの基本的な使い方を学ぶことができました。この制作を通して得た知識や設定は、その後のプロジェクト制作においても大いに活かされています。"
+    "portfolio": {
+      "id": "3",
+      "title": "",
+      "caption": "caption",
+      "type": "",
+      "url": "",
+      "mainImageSrc": "",
+      "overview": "既存のポートフォリオサイトのリプレイス、そしてNext.jsでのプロジェクト作りを目的として制作しました。",
+      "duration": "",
+      "tools": [],
+      "pointTitle01":"新しい取り組み",
+      "pointText01":"単なるHTMLサイトにならないよう、コンポーネントやマークアップ、CSS設計に細心の注意を払いながら制作を進めました。新たな知見を得るために、TypescriptやCSS in JSであるEmotionの採用、多言語切り替えの実装を行っています。",
+      "subImageSrc": "",
+      "discoveredTitle": "制作を振り返って",
+      "discoveredText": "コンポーネントに対してどのようにCSS in JSでCSSを当てるかという点、そしてpropsの使い方やディレクトリ構成について難航しました。コンポーネント一つだけでも、マークアップ言語とは全く異なる知識が必要だということに気付かされました。最初は理解が難しかったものの、最終的にはこの製作を通してNext.js、React、Typescriptの基本的な使い方を学ぶことができたと感じています。"
     },
     "rblog": {
-      "title": "r.blog",
-      "caption": "テクノロジーブログです。",
-      "url": "rblog",
-      "imageSrc": "/works/img_works_rblog.png",
-      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
+      "id": "",
+      "title": "",
+      "caption": "caption",
+      "type": "",
+      "url": "",
+      "mainImageSrc": "",
+      "overview": "r.blogは制作フローやエラー解決、技術メモなどを載せている技術ブログです。Next.jsとmicroCMSを組み合わせたJAMstackを採用しています。",
+      "duration": "",
+      "tools": [],
+      "pointTitle01":"+αの試み",
+      "pointText01":"作成プロセスのほとんどはチュートリアルに従っていましたが、docker-compose を使用したり、異なる CSSアプローチを行ったり、新しい機能を追加するライブラリを使用したりするなど、いくつかの点を工夫しています。",
+      "subImageSrc": "",
+      "discoveredTitle": "制作を振り返って",
+      "discoveredText": "Dockerを使用した環境構築において、最初はコンテナの理解に苦労しましたが、試行錯誤を経てその仕組みを脳内でイメージ化できるようになりました。また、APIを使用しNext.jsでデータの取得・表示を行うという一連の実装は、Next.jsがどのようにデータを扱っているかの理解に繋がりました。"
     },
-    "portfolio": {
-      "title": "Portfolio - rinaofk",
-      "caption": "自分についてのウェブサイトです",
-      "url": "portfolio",
-      "imageSrc": "/works/img_works_portfolio.png",
-      "tools": ["Adobe XD","Sass(SCSS)","gulp","git(CUI)","GitHub","Docker"]
+    "pre_portfolio": {
+      "id": "1",
+      "title": "",
+      "caption": "caption",
+      "type": "",
+      "url": "",
+      "mainImageSrc": "",
+      "overview": "今まで使用経験のなかったVScode、git（CUI）、GitHubなどのツールを使用してポートフォリオを作成しました。",
+      "duration": "",
+      "tools": [],
+      "pointTitle01":"制作の背景",
+      "pointText01":"VScodeやgithubなど、一般的に使用されているツールを使った経験がなかったため、これらのツールの知識を習得するために自身のポートフォリオサイトを作る際に使用することにしました。また、仕事では対応ブラウザや業務効率の都合上使用経験が少なかったCSSのプロパティやSassの機能を積極的に使用し、新たなスキルを得る取り組みも行いました。",
+      "subImageSrc": "",
+      "discoveredTitle": "制作を振り返って",
+      "discoveredText": "環境構築を行う際には、単に設定を行うのではなく、このフローが何を行っているのかを常に理解しながら進めるよう心がけました。また、シンプルな構成のプロジェクトに対し新しいツールを試すことで、それぞれの基本的な使い方を学ぶことができました。この制作を通して得た知識や設定は、その後のプロジェクト制作においても大いに活かされています。"
     }
   }
 }

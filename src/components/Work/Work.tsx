@@ -3,41 +3,42 @@
 import { css } from '@emotion/react'
 import * as global from '../../app/[locale]/common/global'
 
-import Data from './data';
-
 import Image from "next/image";
 import Link from "next/link";
 
 import { Tools } from '../../components/elements/tools/tools';
 
-export const Work = () => {
+import JsonData from '../../../messages/en.json'; // 生のjsonデータをオブジェクトで受取
+import WorksInterface from '../../../messages/WorksInterface' //オブジェクトの型を指定
+const Works: WorksInterface = JsonData.Works //worksのデータを型指定してWorksに代入
 
+export const Work = () => {
   return (
     <div css={list}>
-      {Data.map((work) => (
-          <div css={item} key={work.id}>
-            <Link href={`/works/${work.url}`} >
-              <div css={inner}>
-                <div css={img}>
-                  <Image
-                    src={work.imageSrc}
-                    alt="Vercel Logo"
-                    width={295}
-                    height={200}
-                    priority
-                  />
-                </div>
-                <dl css={desc}>
-                  <dt>{work.title}</dt>
-                </dl>
-                <Tools
-                  tools={work.tools}
-                  css={tags}
-                ></Tools>
-                <div css={link} className="hover">Read more</div>
+      {Object.keys(Works).map((key) => (
+        <div css={item} key={Works[key].id}>
+          <Link href={`/works/${Works[key].url}`} >
+            <div css={inner}>
+              <div css={img}>
+                <Image
+                  src={Works[key].mainImageSrc}
+                  alt={Works[key].title}
+                  width={295}
+                  height={200}
+                  priority
+                />
               </div>
-            </Link>
-          </div>
+              <dl css={desc}>
+                <dt>{Works[key].title}</dt>
+              </dl>
+              <Tools
+                tools={Works[key].tools}
+                css={tags}
+              ></Tools>
+              <div css={link} className="hover">Read more</div>
+            </div>
+          </Link>
+        </div>
       ))}
     </div>
   );
