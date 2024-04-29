@@ -1,4 +1,5 @@
 
+import * as global from '@/app/[locale]/common/global'
 
 export default function About() {
   return (

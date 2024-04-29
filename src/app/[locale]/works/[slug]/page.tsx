@@ -1,17 +1,17 @@
 'use client'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import * as global from '../../common/global'
+import * as global from '@/app/[locale]/common/global'
 
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation'
 
 import Image from "next/image";
 
-import { Tools } from '../../../../components/elements/tools/tools';
+import { Tools } from '@/components/elements/tools/tools';
 
-import JsonData from '../../../../../messages/en.json'; // 生のjsonデータをオブジェクトで受取
-import WorksInterface from '../../../../../messages/WorksInterface' //オブジェクトの型を指定
+import JsonData from '@/../messages/en.json'; // 生のjsonデータをオブジェクトで受取
+import WorksInterface from '@/../messages/WorksInterface' //オブジェクトの型を指定
 const Works: WorksInterface = JsonData.Works //worksのデータを型指定してWorksに代入
 
 export default function WorkPage() {

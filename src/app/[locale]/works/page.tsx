@@ -1,9 +1,9 @@
 'use client'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import * as global from '../common/global'
+import * as global from '@/app/[locale]/common/global'
 
-import { Work } from '../../../components/Work/Work';
+import { Work } from '@/components/Work/Work';
 
 export default function Works() {
   return (

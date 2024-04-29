@@ -1,14 +1,14 @@
 'use client'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import * as global from './common/global'
+import * as global from '@/app/[locale]/common/global'
 
 import { useTranslations } from 'next-intl';
 
 import Image from "next/image";
 
-import { Button } from '../../components/elements/button/button';
-import { Work } from '../../components/Work/Work';
+import { Button } from '@/components/elements/button/button';
+import { Work } from '@/components/Work/Work';
 
 export default function Home() {
 

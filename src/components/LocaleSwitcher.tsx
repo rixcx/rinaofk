@@ -1,6 +1,6 @@
 import { useLocale } from 'next-intl'
-import { localeNames } from '../config'
-import LocaleSwitcherSelect from './LocaleSwitcherSelect'
+import { localeNames } from '@/config'
+import LocaleSwitcherSelect from '@/components/LocaleSwitcherSelect'
 
 export default function LocaleSwitcher() {
   const locale = useLocale()

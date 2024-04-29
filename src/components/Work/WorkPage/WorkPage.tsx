@@ -1,9 +1,7 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { Button } from '../../../components/elements/button/button';
-
-import Data from '../data';
+import { Button } from '@/components/elements/button/button';
 
 export const PrePortfolio = () => {
   return ( 

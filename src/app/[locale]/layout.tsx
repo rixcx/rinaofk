@@ -1,14 +1,14 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Ubuntu } from "next/font/google";
 
-import './common/destyle.css';
-import './common/variables.css';
-import './common/root.css';
+import '@/app/[locale]/common/destyle.css';
+import '@/app/[locale]/common/variables.css';
+import '@/app/[locale]/common/root.css';
 
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/footer';
+import Header from '@/components/header/header';
+import Footer from '@/components/footer/footer';
 
-import LocaleSwitcher from '../../components/LocaleSwitcher'
+import LocaleSwitcher from '@/components/LocaleSwitcher'
 
 const ubuntu = Ubuntu({
   weight: ['300','400','500','700'],
