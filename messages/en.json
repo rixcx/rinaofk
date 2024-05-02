@@ -1,10 +1,60 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "text": "I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan. Passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them."
   },
-  "Header": {
-    "about": "About",
-    "works": "Works"
+  "About": {
+    "intro": "I am a Web developer with experience in designing multiple websites for BtoC and developing various systems.\nI have experienced practical works in renewing old sites, creating attractive LP and adding new features.\nI feel fulfillment in ensuring customer and user satisfaction by solving problems and by giving them value through utilization of Web.",
+    
+     "Experience": {
+      "aden_engineer_01": "Responsible for developing new systems as the only engineer in web department of Osaka branch. Made estimates upon client's request, built and improved features with using PHP(CakePHP) and MySQL.",
+      "aden_engineer_02": "Conducted CakePHP workshops that contributed to the grow in value of web design team's suggestions by have knowledge about how we create features.",
+
+      "aden_designer_01": "Conducted meeting with clients to discuss their needs and suggesting proposals suitable for them, drawing from my wealth of experience.",
+      "aden_designer_02": "Created high quality wire frames and comprehensible sitemaps to effectively communicate, And designed attractive websites.",
+      "aden_designer_03": "Gained abundant experience creating and building websites with HTML, CSS, JavaScript and PHP.",
+      "aden_designer_04": "As a project manager, converted, redesigned and added functions legacy sites include 100+ pages to responsive design. Carried out without delay by thorough schedule and resource management.",
+      "aden_designer_05": "Led and mentored newcomers.",
+      
+      "dflat_parttime_01": "Created UI parts such as icons for websites and applications.",
+      "dflat_parttime_02": "Built foundational knowledge and expertise in creative industries."
+     },
+    
+     "Education": {
+      "name": "Osaka University of Art - Bachelor of arts",
+      "department": "Department of Information design."
+     },
+     "Skill": {
+      "Design": {
+        "wireframing": "Wire framing",
+        "prototyping": "Prototyping",
+        "ui/ux": "UI/UX",
+        "accessibility": "Accessibility",
+        "bannerdesign": "Banner design",
+        "lpdesign": "LP design",
+        "brand-sitedesign": "Brand-site design",
+        "business-sitedesign": "Business-site design",
+        "supermarket-sitedesign": "Supermarket-site design",
+        "photograph": "Photograph"
+      },
+      "Business" : {
+        "projectmanagement": "Project management",
+        "projectdirection": "Project direction",
+        "progressmanagement": "Progress management",
+        "meeting": "Meeting",
+        "seo": "SEO",
+        "createdocuments": "Create documents",
+        "training": "Training",
+        "improveworkefficiency": "Improve work efficiency"
+      },
+      "learningmore" : "... and learning more!"
+     },
+     
+     "Constitute": {
+      "title": "What constitutes me are...",
+      "travel" : "I always think travel. I love thinking about where to go, what to experience, and how to go there. Current my dream is to travel Europe becouse I haven't gone.",
+      "spicy" : "I can't live without spicy food. I have visited to Korea just to indulge in spicy food, or I have grown chili peppers by myself to eat them.",
+      "goofy" : "I have a weakness for the goofy faces of birds even though I can't explain why."
+     }
   },
   "Works": {
     "portfolio": {

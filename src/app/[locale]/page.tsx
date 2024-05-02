@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import * as global from '@/app/[locale]/common/global'
 
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation'
 
 import Image from "next/image";
 
@@ -12,15 +13,14 @@ import { Work } from '@/components/Work/Work';
 
 export default function Home() {
 
- const t = useTranslations('Index');
+  const t = useTranslations('Index'); 
  
   return (
     <main>
       <section css={[global.container,hero_bg]}>
         <div css={hero}>
-            <h1>{t('title')}</h1>
           <h1 css={hero_title}>&#x1F427;<br css={global.sp_only} /> Hello. <br css={global.sp_only} />I'm <span>Rina</span>,<br />a Creative web developer.</h1>
-          <p css={hero_desc}>I am a Web developer with 4 years of experience as Web designer and 2.5 years as Web Engineer in Japan. Passionate about listening clients face-to-face to find out the true needs of theirs and create proposals, design and systems for them.</p>
+          <p css={hero_desc}>{t('text')}</p>
           <Button
             type="whiteSolid"
             link="/about"

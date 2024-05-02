@@ -3,8 +3,6 @@
 import { css } from '@emotion/react'
 import * as global from '@/app/[locale]/common/global'
 
-import { useTranslations } from 'next-intl';
-
 import Image from "next/image";
 import Link from 'next/link'
 
