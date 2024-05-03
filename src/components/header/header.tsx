@@ -6,6 +6,8 @@ import * as global from '@/app/[locale]/common/global'
 import Image from "next/image";
 import Link from 'next/link'
 
+import LocaleSwitcher from '@/components/LocaleSwitcher'
+
 export default function Header() {
 
   return (
@@ -25,6 +27,7 @@ export default function Header() {
           <li><a href="/about">About</a></li>
           <li><a href="/works">Works</a></li>
         </ul>
+         <div css={switcher}><LocaleSwitcher /></div>
       </nav>
     </header>
   );
@@ -86,4 +89,6 @@ const menu = css`
       }
     }
   }
+`;
+const switcher = css`
 `;
