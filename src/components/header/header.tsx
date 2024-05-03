@@ -42,6 +42,7 @@ const header = css`
 const wrap = css`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 35px 0;
 
   ${global.sp} {
@@ -51,6 +52,7 @@ const wrap = css`
 
 const logo = css`
   width: 32px;
+  margin-right:auto;
   
   ${global.sp} {
     width: 25px;
@@ -91,4 +93,26 @@ const menu = css`
   }
 `;
 const switcher = css`
+  margin: 0 -15px 0 10px;
+  font-size: var(--font-sm);
+
+  button {
+    width: 40px;
+    text-align: center;
+  }
+
+ > button +  button {
+  position:relative;
+  
+  &::before {
+    position: absolute;
+    top: calc(50% - 0.44em);
+    left: 0px;
+    content: "";
+    display: inline-block;
+    width: 1.5px;
+    height: 12px;
+    background-color: var(--color-black);
+  }
+}
 `;

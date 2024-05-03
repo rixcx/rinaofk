@@ -14,12 +14,17 @@ export default function LocaleSwitcher() {
     const target = event.target as HTMLTextAreaElement; //eventのTargetをstringで読めるよう変換
     router.replace(pathname, {locale: target.value})
   }
-
+  
+  function changeStyle(value: string) {
+    if (locale === value ) {
+      return  { fontWeight: 'bold' };
+    }
+  }
+  
   return (
     <>
-    {locale}
       {localeObject.map((item) => (
-        <button key={item[0]} type="button" onClick={onChange} value={item[0]} css={locale}>{item[1]}</button>
+        <button key={item[0]} type="button" onClick={onChange} value={item[0]} style={changeStyle(item[0])}>{item[1]}</button>
       ))}
     </>
   )
