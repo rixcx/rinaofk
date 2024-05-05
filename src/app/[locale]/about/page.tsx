@@ -52,6 +52,7 @@ export default function About() {
               <li>{t('Experience.aden_designer_03')}</li>
               <li>{t('Experience.aden_designer_04')}</li>
               <li>{t('Experience.aden_designer_05')}</li>
+              <li>{t('Experience.aden_designer_06')}</li>
             </ul>
           </div>
           <div css={ex_txt}>
