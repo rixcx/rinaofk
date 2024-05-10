@@ -8,6 +8,8 @@ import { useParams } from 'next/navigation'
 
 import Image from "next/image";
 
+import { Button } from '@/components/elements/button/button';
+
 import { Tools } from '@/components/elements/tools/tools';
 
 import JsonData from '@/../messages/en.json'; // 生のjsonデータをオブジェクトで受取
@@ -20,6 +22,8 @@ export default function WorkPage() {
   const url: string | string[] = params.slug
   const t = useTranslations('Works.'+ url);
   const work = Works[url as keyof typeof Works]
+  
+  const worklink = work.workLink;
 
   return (
     <main css={main}>
@@ -52,11 +56,15 @@ export default function WorkPage() {
               </dd>
             </div>
           </dl>
-            {/* <Button
-            type="borderd"
-            link="/"
-            css={link}
-          >See this project</Button> */}
+          { worklink && (
+                <Button
+                  type="borderd"
+                  link={work.workLink}
+                  css={link}
+                  target
+              >See this project</Button>
+            )
+          }
         </section>
         
         <section css={detail}>

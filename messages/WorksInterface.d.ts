@@ -4,6 +4,7 @@ interface WorksDatailInterface {
   caption: string;
   type: string;
   url: string;
+  workLink: string;
   mainImageSrc: string;
   overview: string;
   duration: string;

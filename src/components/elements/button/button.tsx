@@ -9,20 +9,23 @@ type ButtonProps = {
   children?: React.ReactNode;
   className? : string;
   link : string;
+  target? : boolean;
 };
 
 export const Button = (props: ButtonProps) => {
 
 //props.typeをそのままindex検索に使うことができないため、index検索で使える型に変換する
 const type = (!props.type ? "base": props.type as keyof typeof styles);
+//indexからcssを検索して当てる
 
   return (
-    //indexからcssを検索して当てる
-    <Link href={props.link}  css={styles[type]} className={props.className}>
-      {props.children}
-    </Link>
+    <>
+      {props.target
+          ? <Link href={props.link} css={styles[type]} className={props.className}  target="_blank"rel="noopener noreferrer">{props.children}</Link>
+          : <Link href={props.link} css={styles[type]} className={props.className}>{props.children}</Link>
+      }
+    </>
   );
-
 };
 
 //ベースのcss、@extend用
