@@ -29,6 +29,19 @@ const messages = useMessages();
      <head>
         <title>rinaofk</title>
         <meta name='description' content='Hello. I’m Rina, Web Designer and developer.' />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+          type="image/png"
+          sizes="180x180"
+        />
+        <link
+          rel="icon"
+          href="/android-chrome-192x192.png"
+          type="image/png"
+          sizes="192x192"
+        />
       </head>
       <body className={ubuntu.className}>
       
