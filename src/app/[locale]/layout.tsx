@@ -1,6 +1,8 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Ubuntu } from "next/font/google";
 
+import Script from 'next/script';
+
 import '@/app/[locale]/common/destyle.css';
 import '@/app/[locale]/common/variables.css';
 import '@/app/[locale]/common/root.css';
@@ -42,6 +44,22 @@ const messages = useMessages();
           type="image/png"
           sizes="192x192"
         />
+        <Script
+          strategy="afterInteractive"
+          src={"https://www.googletagmanager.com/gtag/js?id=G-622R268FT9"}
+        />
+        <Script
+          strategy="afterInteractive"
+          id="gtag-config"
+          >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-622R268FT9');
+          `}
+        </Script>
       </head>
       <body className={ubuntu.className}>
       
