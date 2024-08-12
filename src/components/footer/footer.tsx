@@ -26,7 +26,7 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="/common/RinaOfuku-resume.pdf?230505" rel="noopener noreferrer" target="_blank">
+            <Link href="/common/RinaOfuku-resume.pdf?240812" rel="noopener noreferrer" target="_blank">
               Resume
             </Link>
           </li>
