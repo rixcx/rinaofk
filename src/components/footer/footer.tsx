@@ -21,11 +21,6 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="https://linkedin.com/in/rina-ofuku-3329002b9" rel="noopener noreferrer" target="_blank">
-              Linkedin
-            </Link>
-          </li>
-          <li>
             <Link href="/common/RinaOfuku-resume.pdf?240812" rel="noopener noreferrer" target="_blank">
               Resume
             </Link>
