@@ -21,7 +21,7 @@ export const Work = () => {
             <div css={inner}>
               <div css={img}>
                 <Image
-                  src={Works[key].mainImageSrc}
+                  src={`/works/img_works_${Works[key].ImageName}.png`}
                   alt={Works[key].title}
                   width={295}
                   height={200}

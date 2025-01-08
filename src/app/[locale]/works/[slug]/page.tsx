@@ -31,7 +31,7 @@ export default function WorkPage() {
         <h1 css={title}>{work.title}</h1>
         <div css={[img]}>
           <Image
-            src={work.mainImageSrc}
+            src={`/works/img_main_${work.ImageName}.png`}
             alt={t('title')}
             width={1280}
             height={600}

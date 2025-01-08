@@ -5,7 +5,7 @@ interface WorksDatailInterface {
   type: string;
   url: string;
   workLink: string;
-  mainImageSrc: string;
+  ImageName: string;
   overview: string;
   duration: string;
   tools: string[];
