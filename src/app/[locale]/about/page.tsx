@@ -41,7 +41,7 @@ export default function About() {
             <ul>
               <li>{t('Experience.aden_engineer_01')}</li>
               <li>{t('Experience.aden_engineer_02')}</li>
-              <li>{t('Experience.aden_engineer_03')}</li>
+              {/* <li>{t('Experience.aden_engineer_03')}</li> */}
               <li>{t('Experience.aden_engineer_04')}</li>
             </ul>
           </div>
