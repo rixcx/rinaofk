@@ -59,6 +59,23 @@
      }
   },
   "Works": {
+    "nodetodoapp": {
+      "id": "5",
+      "title": "",
+      "caption": "caption",
+      "type": "",
+      "url": "",
+      "workLink": "",
+      "ImageName": "",
+      "overview": "Node.jsへの理解を深めることを目的に、Node.jsを用いたTodoリストのWebアプリケーションを制作しました。",
+      "duration": "",
+      "tools": [],
+      "pointTitle01":"Node.js & Reactのフルスタック開発",
+      "pointText01":"バックエンドにはNode.jsを用いてWebAPIサーバーを構築し、ホスティングサービス（Render）にデプロイ。Reactのフロントエンドと連携させています。タスクのドラッグ&ドロップによるカテゴリ移動機能を実装し、技術の習得と実践的な開発を重視しました。",
+      "subImageSrc": "",
+      "discoveredTitle": "制作を振り返って",
+      "discoveredText": "コーディングにおけるNode.jsは主にnpmパッケージ管理やタスクランナーとして使われている中、今回はサーバーサイドでの活用となり、少しアプローチが異なってしまったことが反省点。それでもJavaScriptがブラウザ外で動作することなどNode.jsへの理解が深まり、さらにREST APIを自作したことでAPI設計に関する知識も向上させることができました。今後はMongoDBなどのDBと接続し、より実用的な構成へと改善していきたいと考えています。"
+    },
     "languagecabclub": {
       "id": "4",
       "title": "",

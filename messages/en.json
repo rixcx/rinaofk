@@ -59,6 +59,23 @@
      }
   },
   "Works": {
+    "nodetodoapp": {
+      "id": "5",
+      "title": "Todo lists app",
+      "caption": "caption",
+      "type": "Application",
+      "url": "nodetodoapp",
+      "workLink": "https://node-todo-xi.vercel.app/",
+      "ImageName": "nodetodoapp",
+      "overview": "I developed this Todo list application using Node.js to deepen my knowledge of Node.js. ",
+      "duration": "2025 / 2 weeks",
+      "tools": ["Node.js","Express.js","Vite","React","git","github"],
+      "pointTitle01":"Full-Stack Dev with Node.js & React",
+      "pointText01":"This project's backend is built with Node.js as Web API server and deployed on the hosting service(Render). It is connected to a React frontend. I implemented a drag-and-drop feature for task to another category, that aimed to strengthen both learning skills and practical abilities.",
+      "subImageSrc": "/works/img_sub_nodetodoapp.gif",
+      "discoveredTitle": "Discovered",
+      "discoveredText": "Node.js is primarily used for package management and as a task runner in coding area, but I used it on the server-side in this project, which led to a slightly different approach. However, I deepened my understanding of Node.js, such as JavaScript runs outside the browser. Additionally, by building a REST API, I was able to enhance my knowledge of API. Moving forward, I plan to connect with a database like MongoDB to  make the system more practical."
+    },
     "languagecabclub": {
       "id": "4",
       "title": "Language Cab Club",
